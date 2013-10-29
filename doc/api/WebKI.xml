@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Base64Encoder class">
+    <HelpKINode Title="Base64Encoder Class" Url="html/17c80d03-fe2f-aba2-b124-06a420c33596.htm" />
+    <HelpKINode Title="Base64Encoder Members" Url="html/04a3b307-1ec8-e19d-7e6d-a188107e7810.htm" />
+    <HelpKINode Title="about Base64Encoder class" Url="html/17c80d03-fe2f-aba2-b124-06a420c33596.htm" />
+    <HelpKINode Title="all members" Url="html/04a3b307-1ec8-e19d-7e6d-a188107e7810.htm" />
+    <HelpKINode Title="constructor" Url="html/d5eb0f3b-c905-51b7-852b-f07eca3f031c.htm" />
+    <HelpKINode Title="methods" Url="html/9bbf4215-8c89-89d6-e018-fc28581ee7b4.htm" />
+    <HelpKINode Title="properties" Url="html/dd047313-b3d4-f773-1a0a-42000180d6d9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Base64Encoder.Base64Encoder constructor" Url="html/d5eb0f3b-c905-51b7-852b-f07eca3f031c.htm" />
+  <HelpKINode Title="Base64Encoder.Description property" Url="html/48ecf1ce-5417-dde9-222b-4c431fd14b88.htm" />
+  <HelpKINode Title="Base64Encoder.Encode method" Url="html/353191b6-0a19-41a2-18f5-a0b2738a2f52.htm" />
+  <HelpKINode Title="Base64Encoder.Name property" Url="html/a18f79ad-1518-4c80-a73f-7e4e0995b59f.htm" />
+  <HelpKINode Title="Crc32Encoder class">
+    <HelpKINode Title="Crc32Encoder Class" Url="html/8db2e4a7-b613-ac40-582b-dd3aeefd5201.htm" />
+    <HelpKINode Title="Crc32Encoder Members" Url="html/57a83df3-3bd9-338e-dd5d-c46b661dfc4e.htm" />
+    <HelpKINode Title="about Crc32Encoder class" Url="html/8db2e4a7-b613-ac40-582b-dd3aeefd5201.htm" />
+    <HelpKINode Title="all members" Url="html/57a83df3-3bd9-338e-dd5d-c46b661dfc4e.htm" />
+    <HelpKINode Title="constructor" Url="html/c95d6183-5407-7c4d-062f-8dc5058b3580.htm" />
+    <HelpKINode Title="methods" Url="html/2fb7f5e2-a90a-3e2e-0936-2b6b0c59237f.htm" />
+    <HelpKINode Title="properties" Url="html/c7b92763-12b7-c0d9-c2b6-a036b5c6d611.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crc32Encoder.Crc32Encoder constructor" Url="html/c95d6183-5407-7c4d-062f-8dc5058b3580.htm" />
+  <HelpKINode Title="Crc32Encoder.Description property" Url="html/65e6884e-e47a-c491-4bb9-77c0e1d275a6.htm" />
+  <HelpKINode Title="Crc32Encoder.Encode method" Url="html/35941876-0f36-d20f-f4f3-7d6a37558538.htm" />
+  <HelpKINode Title="Crc32Encoder.Name property" Url="html/15d19323-405f-a481-a495-a18a84dab3b8.htm" />
+  <HelpKINode Title="Crypt namespace" Url="html/aee06488-fa84-78f9-6963-2f88a3537e76.htm" />
+  <HelpKINode Title="Crypt.EncoderManager class">
+    <HelpKINode Title="EncoderManager Class" Url="html/96867a8e-ca48-4d8a-04c4-197abb25ffe9.htm" />
+    <HelpKINode Title="EncoderManager Members" Url="html/75e0b5aa-7b03-653a-57c8-48b6a8f3a95d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders namespace" Url="html/6e055f5c-0cfd-cf40-c6e3-8efcd3355fa5.htm" />
+  <HelpKINode Title="Crypt.Encoders.Base64Encoder class">
+    <HelpKINode Title="Base64Encoder Class" Url="html/17c80d03-fe2f-aba2-b124-06a420c33596.htm" />
+    <HelpKINode Title="Base64Encoder Members" Url="html/04a3b307-1ec8-e19d-7e6d-a188107e7810.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.Crc32Encoder class">
+    <HelpKINode Title="Crc32Encoder Class" Url="html/8db2e4a7-b613-ac40-582b-dd3aeefd5201.htm" />
+    <HelpKINode Title="Crc32Encoder Members" Url="html/57a83df3-3bd9-338e-dd5d-c46b661dfc4e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.DesEncoder class">
+    <HelpKINode Title="DesEncoder Class" Url="html/5a5912ae-ca0a-98a5-bc6e-5e032a7207d5.htm" />
+    <HelpKINode Title="DesEncoder Members" Url="html/5bd9d51b-e9ae-45d6-55e8-07ee7871a9a0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.HtmlEncoder class">
+    <HelpKINode Title="HtmlEncoder Class" Url="html/6b1032d8-c1ef-f936-700d-a02588ba1d8c.htm" />
+    <HelpKINode Title="HtmlEncoder Members" Url="html/b4306c17-8c73-9035-1037-73623afaad77.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.LowerCaseEncoder class">
+    <HelpKINode Title="LowerCaseEncoder Class" Url="html/0352dcf3-0978-6fe6-a551-43a893a03a21.htm" />
+    <HelpKINode Title="LowerCaseEncoder Members" Url="html/ce1636c8-945b-22ae-902a-d71e9ba8a0b6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.MD2Encoder class">
+    <HelpKINode Title="MD2Encoder Class" Url="html/d873eb52-f096-bfa1-839e-2b1fc86ae199.htm" />
+    <HelpKINode Title="MD2Encoder Members" Url="html/850bb6bb-00c5-be29-9572-e44b1d98e04d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.MD4Encoder class">
+    <HelpKINode Title="MD4Encoder Class" Url="html/98b0034b-bc00-1398-22b1-363e8dfbaf48.htm" />
+    <HelpKINode Title="MD4Encoder Members" Url="html/a46b17c8-cd45-37d7-542e-5d5be5a32512.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.MD5Encoder class">
+    <HelpKINode Title="MD5Encoder Class" Url="html/5abc4629-0883-1cdc-cd33-e53c15e0be8b.htm" />
+    <HelpKINode Title="MD5Encoder Members" Url="html/f486ef13-5744-4250-98a8-1343182620f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.RandomAsciiEncoder class">
+    <HelpKINode Title="RandomAsciiEncoder Class" Url="html/05d1efdd-566a-9929-8a58-e8fc3efb5988.htm" />
+    <HelpKINode Title="RandomAsciiEncoder Members" Url="html/a92034c4-49b0-c2c1-79c7-a671d09c3b71.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.Sha1Encoder class">
+    <HelpKINode Title="Sha1Encoder Class" Url="html/4248ebb4-b979-dcc3-1df2-be1ec73459b7.htm" />
+    <HelpKINode Title="Sha1Encoder Members" Url="html/0b0a1cff-03aa-56b6-7935-6310a2c87514.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.Sha224Encoder class">
+    <HelpKINode Title="Sha224Encoder Class" Url="html/89a070a8-53c0-608f-2db1-df32c80b2406.htm" />
+    <HelpKINode Title="Sha224Encoder Members" Url="html/3e763617-74ac-81f4-ef6c-29e6dbefddfe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.Sha256Encoder class">
+    <HelpKINode Title="Sha256Encoder Class" Url="html/1bc6a42e-1a23-2d87-40b9-8b0f8a8bee48.htm" />
+    <HelpKINode Title="Sha256Encoder Members" Url="html/2ea92470-a8a5-76bb-d106-2e331151d09f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.Sha384Encoder class">
+    <HelpKINode Title="Sha384Encoder Class" Url="html/71005b4f-ba34-d923-f6cc-cbb928237643.htm" />
+    <HelpKINode Title="Sha384Encoder Members" Url="html/ae358f5a-ca95-4c86-e96a-ea4ee33379ab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.Sha512Encoder class">
+    <HelpKINode Title="Sha512Encoder Class" Url="html/6e39b1e3-2409-be0f-16fd-516cb463693d.htm" />
+    <HelpKINode Title="Sha512Encoder Members" Url="html/7a009982-40ba-01b0-af2b-a1dd6fb8f0ff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.TitleCaseEncoder class">
+    <HelpKINode Title="TitleCaseEncoder Class" Url="html/d1d2c21a-04a4-f3ae-69a5-db104d29848f.htm" />
+    <HelpKINode Title="TitleCaseEncoder Members" Url="html/1bfb7151-3d37-e07c-b412-3a1b363a41f1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.TripleDesEncoder class">
+    <HelpKINode Title="TripleDesEncoder Class" Url="html/c398280e-af17-7c09-34d9-227f3d398c32.htm" />
+    <HelpKINode Title="TripleDesEncoder Members" Url="html/388610e2-f131-a60f-cf04-8f84bffae003.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.UnixCryptEncoder class">
+    <HelpKINode Title="UnixCryptEncoder Class" Url="html/a880f3d6-12c6-a036-2e4f-02170756f41e.htm" />
+    <HelpKINode Title="UnixCryptEncoder Members" Url="html/59c17eb6-111a-58ea-ca4b-181a06a47271.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.UpperCaseEncoder class">
+    <HelpKINode Title="UpperCaseEncoder Class" Url="html/39892207-61b0-532e-97cc-be9078282e07.htm" />
+    <HelpKINode Title="UpperCaseEncoder Members" Url="html/e4ae54e7-f21e-6562-4f00-2484cbe68c82.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.Encoders.XmlEncoder class">
+    <HelpKINode Title="XmlEncoder Class" Url="html/e070c6d8-28ad-6261-805e-cf9891797de5.htm" />
+    <HelpKINode Title="XmlEncoder Members" Url="html/ecd50935-0496-ef04-e92d-b3de2592c36d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Crypt.IStringEncoder interface">
+    <HelpKINode Title="IStringEncoder Interface" Url="html/a8e42c22-464f-f04b-6285-ced3eeb19eed.htm" />
+    <HelpKINode Title="IStringEncoder Members" Url="html/30d7b514-459f-4394-aa1b-0fa993f84453.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Description property">
+    <HelpKINode Title="Base64Encoder.Description Property " Url="html/48ecf1ce-5417-dde9-222b-4c431fd14b88.htm" />
+    <HelpKINode Title="Crc32Encoder.Description Property " Url="html/65e6884e-e47a-c491-4bb9-77c0e1d275a6.htm" />
+    <HelpKINode Title="DesEncoder.Description Property " Url="html/09568367-ff50-914c-ac60-014932e90a65.htm" />
+    <HelpKINode Title="HtmlEncoder.Description Property " Url="html/90d734f4-35c2-7baf-dfea-46f78e672304.htm" />
+    <HelpKINode Title="IStringEncoder.Description Property " Url="html/54e0805f-deec-e903-daf3-2e314bff25a6.htm" />
+    <HelpKINode Title="LowerCaseEncoder.Description Property " Url="html/37cb407c-1d41-9d8f-860a-5a533b6378ea.htm" />
+    <HelpKINode Title="MD2Encoder.Description Property " Url="html/ebf17c91-de04-74df-2594-e24f233320db.htm" />
+    <HelpKINode Title="MD4Encoder.Description Property " Url="html/5f32be81-6995-435e-3702-0e3ae94a8ba7.htm" />
+    <HelpKINode Title="MD5Encoder.Description Property " Url="html/6e90a9cb-b425-7989-08c0-9a4535151702.htm" />
+    <HelpKINode Title="RandomAsciiEncoder.Description Property " Url="html/5981bbd1-bb1c-cf67-ee54-e79dc84e6752.htm" />
+    <HelpKINode Title="Sha1Encoder.Description Property " Url="html/753b50c9-d910-c0e6-f0fe-4063ffee4799.htm" />
+    <HelpKINode Title="Sha224Encoder.Description Property " Url="html/4ee11ee1-747b-9587-65a6-9b1c0af52f25.htm" />
+    <HelpKINode Title="Sha256Encoder.Description Property " Url="html/0820240d-f29f-d720-1c1e-076a18401dc1.htm" />
+    <HelpKINode Title="Sha384Encoder.Description Property " Url="html/10d42523-54de-4378-5d39-0e6dcd11fa7d.htm" />
+    <HelpKINode Title="Sha512Encoder.Description Property " Url="html/9321e181-08f4-3469-b0fa-f90a69abe37f.htm" />
+    <HelpKINode Title="TitleCaseEncoder.Description Property " Url="html/450ad40a-2c7d-8bc8-c978-73454a69aac0.htm" />
+    <HelpKINode Title="TripleDesEncoder.Description Property " Url="html/c02d1703-75da-bd81-4f48-fbfb5ef066de.htm" />
+    <HelpKINode Title="UnixCryptEncoder.Description Property " Url="html/d1f225ab-f78b-20b8-a7d6-7605002441cb.htm" />
+    <HelpKINode Title="UpperCaseEncoder.Description Property " Url="html/3d1f5d23-616a-217e-d4a6-a8045fc3b0a7.htm" />
+    <HelpKINode Title="XmlEncoder.Description Property " Url="html/ef300558-6f3d-3cec-f07c-784910d80091.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DesEncoder class">
+    <HelpKINode Title="DesEncoder Class" Url="html/5a5912ae-ca0a-98a5-bc6e-5e032a7207d5.htm" />
+    <HelpKINode Title="DesEncoder Members" Url="html/5bd9d51b-e9ae-45d6-55e8-07ee7871a9a0.htm" />
+    <HelpKINode Title="about DesEncoder class" Url="html/5a5912ae-ca0a-98a5-bc6e-5e032a7207d5.htm" />
+    <HelpKINode Title="all members" Url="html/5bd9d51b-e9ae-45d6-55e8-07ee7871a9a0.htm" />
+    <HelpKINode Title="constructor" Url="html/27345ee3-800a-c694-d0f8-3ed847c1d681.htm" />
+    <HelpKINode Title="methods" Url="html/8f9c1aa4-f292-d14e-5851-0514ab9731c7.htm" />
+    <HelpKINode Title="properties" Url="html/09d6c076-a5b3-1b6f-bf69-50657bd0ed37.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DesEncoder.Description property" Url="html/09568367-ff50-914c-ac60-014932e90a65.htm" />
+  <HelpKINode Title="DesEncoder.DesEncoder constructor" Url="html/27345ee3-800a-c694-d0f8-3ed847c1d681.htm" />
+  <HelpKINode Title="DesEncoder.Encode method" Url="html/be4b2c71-9b33-7174-58ca-404d9e894db6.htm" />
+  <HelpKINode Title="DesEncoder.Name property" Url="html/3a958487-5b47-795b-073e-619426d182ff.htm" />
+  <HelpKINode Title="Encode method">
+    <HelpKINode Title="Base64Encoder.Encode Method " Url="html/353191b6-0a19-41a2-18f5-a0b2738a2f52.htm" />
+    <HelpKINode Title="Crc32Encoder.Encode Method " Url="html/35941876-0f36-d20f-f4f3-7d6a37558538.htm" />
+    <HelpKINode Title="DesEncoder.Encode Method " Url="html/be4b2c71-9b33-7174-58ca-404d9e894db6.htm" />
+    <HelpKINode Title="HtmlEncoder.Encode Method " Url="html/5314aefa-59fe-43ca-c610-486cf71b07c2.htm" />
+    <HelpKINode Title="IStringEncoder.Encode Method " Url="html/38452391-b91b-8f34-353c-f30ef63e1a7b.htm" />
+    <HelpKINode Title="LowerCaseEncoder.Encode Method " Url="html/c4ef5ea9-ef78-124c-2eb0-578c6ce78a66.htm" />
+    <HelpKINode Title="MD2Encoder.Encode Method " Url="html/c66efaa2-b98c-aa83-fffa-8ab6d2b1750f.htm" />
+    <HelpKINode Title="MD4Encoder.Encode Method " Url="html/59db03e2-3b85-4e9a-6e9b-929ddb6f0de1.htm" />
+    <HelpKINode Title="MD5Encoder.Encode Method " Url="html/5e723609-c641-6967-0c73-96b27b8ff342.htm" />
+    <HelpKINode Title="RandomAsciiEncoder.Encode Method " Url="html/91f58a35-4853-95b9-ea35-2d11c1e31a84.htm" />
+    <HelpKINode Title="Sha1Encoder.Encode Method " Url="html/c1756a37-d566-2b8f-2a69-31bdb4fe4754.htm" />
+    <HelpKINode Title="Sha224Encoder.Encode Method " Url="html/1b3efb2a-be8d-d463-bebc-d5d136d3428b.htm" />
+    <HelpKINode Title="Sha256Encoder.Encode Method " Url="html/b1fdc3dd-1df1-b9ae-3cab-3bc2284f3eee.htm" />
+    <HelpKINode Title="Sha384Encoder.Encode Method " Url="html/9cf7fc48-aaf3-ccbf-1b23-362a2d091dc8.htm" />
+    <HelpKINode Title="Sha512Encoder.Encode Method " Url="html/4bb1d522-09e9-a5ac-8d63-7b2c2b8c0284.htm" />
+    <HelpKINode Title="TitleCaseEncoder.Encode Method " Url="html/7f3d32c9-5d19-f681-33ba-bc04f42db636.htm" />
+    <HelpKINode Title="TripleDesEncoder.Encode Method " Url="html/52ce56fc-1330-6e44-ec51-0ee251c6615a.htm" />
+    <HelpKINode Title="UnixCryptEncoder.Encode Method " Url="html/8323c34b-1985-6d66-e7e1-3654dec31cd8.htm" />
+    <HelpKINode Title="UpperCaseEncoder.Encode Method " Url="html/b51ef1bb-6df0-1ee2-b742-b49105b92e8c.htm" />
+    <HelpKINode Title="XmlEncoder.Encode Method " Url="html/b88c73d8-c727-de4e-a45b-3354c3f64942.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EncoderManager class">
+    <HelpKINode Title="EncoderManager Class" Url="html/96867a8e-ca48-4d8a-04c4-197abb25ffe9.htm" />
+    <HelpKINode Title="EncoderManager Members" Url="html/75e0b5aa-7b03-653a-57c8-48b6a8f3a95d.htm" />
+    <HelpKINode Title="about EncoderManager class" Url="html/96867a8e-ca48-4d8a-04c4-197abb25ffe9.htm" />
+    <HelpKINode Title="all members" Url="html/75e0b5aa-7b03-653a-57c8-48b6a8f3a95d.htm" />
+    <HelpKINode Title="properties" Url="html/f52b8ff7-6db2-b090-f37a-db79fc1726c5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EncoderManager.Encoders property" Url="html/a744e9ec-fcad-e9c6-a7df-c3ebaaeba3ed.htm" />
+  <HelpKINode Title="Encoders property" Url="html/a744e9ec-fcad-e9c6-a7df-c3ebaaeba3ed.htm" />
+  <HelpKINode Title="HtmlEncoder class">
+    <HelpKINode Title="HtmlEncoder Class" Url="html/6b1032d8-c1ef-f936-700d-a02588ba1d8c.htm" />
+    <HelpKINode Title="HtmlEncoder Members" Url="html/b4306c17-8c73-9035-1037-73623afaad77.htm" />
+    <HelpKINode Title="about HtmlEncoder class" Url="html/6b1032d8-c1ef-f936-700d-a02588ba1d8c.htm" />
+    <HelpKINode Title="all members" Url="html/b4306c17-8c73-9035-1037-73623afaad77.htm" />
+    <HelpKINode Title="constructor" Url="html/5d7fba4b-ccf2-8496-0d53-e700f056e94c.htm" />
+    <HelpKINode Title="methods" Url="html/44bace62-639a-976f-ef08-e6f02e22fd86.htm" />
+    <HelpKINode Title="properties" Url="html/cca3f99d-2b47-527d-b515-9fd41db3b1be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HtmlEncoder.Description property" Url="html/90d734f4-35c2-7baf-dfea-46f78e672304.htm" />
+  <HelpKINode Title="HtmlEncoder.Encode method" Url="html/5314aefa-59fe-43ca-c610-486cf71b07c2.htm" />
+  <HelpKINode Title="HtmlEncoder.HtmlEncoder constructor" Url="html/5d7fba4b-ccf2-8496-0d53-e700f056e94c.htm" />
+  <HelpKINode Title="HtmlEncoder.Name property" Url="html/a42b8ba0-982f-e17c-1e7c-0917ffd26742.htm" />
+  <HelpKINode Title="IStringEncoder interface">
+    <HelpKINode Title="IStringEncoder Interface" Url="html/a8e42c22-464f-f04b-6285-ced3eeb19eed.htm" />
+    <HelpKINode Title="IStringEncoder Members" Url="html/30d7b514-459f-4394-aa1b-0fa993f84453.htm" />
+    <HelpKINode Title="about IStringEncoder interface" Url="html/a8e42c22-464f-f04b-6285-ced3eeb19eed.htm" />
+    <HelpKINode Title="all members" Url="html/30d7b514-459f-4394-aa1b-0fa993f84453.htm" />
+    <HelpKINode Title="methods" Url="html/71907197-5f14-648f-0033-42235a7b2844.htm" />
+    <HelpKINode Title="properties" Url="html/e38e2979-b007-752c-e89b-446cab3384c5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IStringEncoder.Description property" Url="html/54e0805f-deec-e903-daf3-2e314bff25a6.htm" />
+  <HelpKINode Title="IStringEncoder.Encode method" Url="html/38452391-b91b-8f34-353c-f30ef63e1a7b.htm" />
+  <HelpKINode Title="IStringEncoder.Name property" Url="html/f9998bf6-b790-0bc8-20b9-9e331dcd6b58.htm" />
+  <HelpKINode Title="LowerCaseEncoder class">
+    <HelpKINode Title="LowerCaseEncoder Class" Url="html/0352dcf3-0978-6fe6-a551-43a893a03a21.htm" />
+    <HelpKINode Title="LowerCaseEncoder Members" Url="html/ce1636c8-945b-22ae-902a-d71e9ba8a0b6.htm" />
+    <HelpKINode Title="about LowerCaseEncoder class" Url="html/0352dcf3-0978-6fe6-a551-43a893a03a21.htm" />
+    <HelpKINode Title="all members" Url="html/ce1636c8-945b-22ae-902a-d71e9ba8a0b6.htm" />
+    <HelpKINode Title="constructor" Url="html/bd7f02a7-e09d-d3fb-0717-03635508ab59.htm" />
+    <HelpKINode Title="methods" Url="html/4a8ff2ce-789a-5b27-2a12-4e2fa34e25c4.htm" />
+    <HelpKINode Title="properties" Url="html/27604a6f-6246-c7c8-cc79-511178d998cb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LowerCaseEncoder.Description property" Url="html/37cb407c-1d41-9d8f-860a-5a533b6378ea.htm" />
+  <HelpKINode Title="LowerCaseEncoder.Encode method" Url="html/c4ef5ea9-ef78-124c-2eb0-578c6ce78a66.htm" />
+  <HelpKINode Title="LowerCaseEncoder.LowerCaseEncoder constructor" Url="html/bd7f02a7-e09d-d3fb-0717-03635508ab59.htm" />
+  <HelpKINode Title="LowerCaseEncoder.Name property" Url="html/c6af947e-066b-3bc5-2bc9-a8faeb8f7468.htm" />
+  <HelpKINode Title="MD2Encoder class">
+    <HelpKINode Title="MD2Encoder Class" Url="html/d873eb52-f096-bfa1-839e-2b1fc86ae199.htm" />
+    <HelpKINode Title="MD2Encoder Members" Url="html/850bb6bb-00c5-be29-9572-e44b1d98e04d.htm" />
+    <HelpKINode Title="about MD2Encoder class" Url="html/d873eb52-f096-bfa1-839e-2b1fc86ae199.htm" />
+    <HelpKINode Title="all members" Url="html/850bb6bb-00c5-be29-9572-e44b1d98e04d.htm" />
+    <HelpKINode Title="constructor" Url="html/0e55f7b3-d16e-4cdf-e525-ed176dee2025.htm" />
+    <HelpKINode Title="methods" Url="html/423e72c8-f453-dc6a-e450-ed5ae1c70d88.htm" />
+    <HelpKINode Title="properties" Url="html/13644cae-2287-406e-2ac1-2a83f71a741e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MD2Encoder.Description property" Url="html/ebf17c91-de04-74df-2594-e24f233320db.htm" />
+  <HelpKINode Title="MD2Encoder.Encode method" Url="html/c66efaa2-b98c-aa83-fffa-8ab6d2b1750f.htm" />
+  <HelpKINode Title="MD2Encoder.MD2Encoder constructor" Url="html/0e55f7b3-d16e-4cdf-e525-ed176dee2025.htm" />
+  <HelpKINode Title="MD2Encoder.Name property" Url="html/e9456750-2dac-a607-06e3-db2bc3050b62.htm" />
+  <HelpKINode Title="MD4Encoder class">
+    <HelpKINode Title="MD4Encoder Class" Url="html/98b0034b-bc00-1398-22b1-363e8dfbaf48.htm" />
+    <HelpKINode Title="MD4Encoder Members" Url="html/a46b17c8-cd45-37d7-542e-5d5be5a32512.htm" />
+    <HelpKINode Title="about MD4Encoder class" Url="html/98b0034b-bc00-1398-22b1-363e8dfbaf48.htm" />
+    <HelpKINode Title="all members" Url="html/a46b17c8-cd45-37d7-542e-5d5be5a32512.htm" />
+    <HelpKINode Title="constructor" Url="html/227d247f-ae82-0b8d-6139-36e1454ad51e.htm" />
+    <HelpKINode Title="methods" Url="html/448cf3bd-0430-2764-0478-5ffd7975c9ea.htm" />
+    <HelpKINode Title="properties" Url="html/dd4a800a-acd9-8114-7cc5-f43aa5945757.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MD4Encoder.Description property" Url="html/5f32be81-6995-435e-3702-0e3ae94a8ba7.htm" />
+  <HelpKINode Title="MD4Encoder.Encode method" Url="html/59db03e2-3b85-4e9a-6e9b-929ddb6f0de1.htm" />
+  <HelpKINode Title="MD4Encoder.MD4Encoder constructor" Url="html/227d247f-ae82-0b8d-6139-36e1454ad51e.htm" />
+  <HelpKINode Title="MD4Encoder.Name property" Url="html/5e22eb4d-d16f-05f6-3a64-7ec531a62afe.htm" />
+  <HelpKINode Title="MD5Encoder class">
+    <HelpKINode Title="MD5Encoder Class" Url="html/5abc4629-0883-1cdc-cd33-e53c15e0be8b.htm" />
+    <HelpKINode Title="MD5Encoder Members" Url="html/f486ef13-5744-4250-98a8-1343182620f8.htm" />
+    <HelpKINode Title="about MD5Encoder class" Url="html/5abc4629-0883-1cdc-cd33-e53c15e0be8b.htm" />
+    <HelpKINode Title="all members" Url="html/f486ef13-5744-4250-98a8-1343182620f8.htm" />
+    <HelpKINode Title="constructor" Url="html/e0d203f5-6c16-1b85-6bff-f80ec59148d1.htm" />
+    <HelpKINode Title="methods" Url="html/fccb9bee-1a84-db2f-920a-58484b7d4460.htm" />
+    <HelpKINode Title="properties" Url="html/8fe0e12d-d43c-d0fd-eae2-0cc310f52dcf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MD5Encoder.Description property" Url="html/6e90a9cb-b425-7989-08c0-9a4535151702.htm" />
+  <HelpKINode Title="MD5Encoder.Encode method" Url="html/5e723609-c641-6967-0c73-96b27b8ff342.htm" />
+  <HelpKINode Title="MD5Encoder.MD5Encoder constructor" Url="html/e0d203f5-6c16-1b85-6bff-f80ec59148d1.htm" />
+  <HelpKINode Title="MD5Encoder.Name property" Url="html/e2b1c5fa-dc2b-0d60-c715-53a14007a107.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="Base64Encoder.Name Property " Url="html/a18f79ad-1518-4c80-a73f-7e4e0995b59f.htm" />
+    <HelpKINode Title="Crc32Encoder.Name Property " Url="html/15d19323-405f-a481-a495-a18a84dab3b8.htm" />
+    <HelpKINode Title="DesEncoder.Name Property " Url="html/3a958487-5b47-795b-073e-619426d182ff.htm" />
+    <HelpKINode Title="HtmlEncoder.Name Property " Url="html/a42b8ba0-982f-e17c-1e7c-0917ffd26742.htm" />
+    <HelpKINode Title="IStringEncoder.Name Property " Url="html/f9998bf6-b790-0bc8-20b9-9e331dcd6b58.htm" />
+    <HelpKINode Title="LowerCaseEncoder.Name Property " Url="html/c6af947e-066b-3bc5-2bc9-a8faeb8f7468.htm" />
+    <HelpKINode Title="MD2Encoder.Name Property " Url="html/e9456750-2dac-a607-06e3-db2bc3050b62.htm" />
+    <HelpKINode Title="MD4Encoder.Name Property " Url="html/5e22eb4d-d16f-05f6-3a64-7ec531a62afe.htm" />
+    <HelpKINode Title="MD5Encoder.Name Property " Url="html/e2b1c5fa-dc2b-0d60-c715-53a14007a107.htm" />
+    <HelpKINode Title="RandomAsciiEncoder.Name Property " Url="html/46d53aa3-890e-d284-de12-a1a5d75cf03b.htm" />
+    <HelpKINode Title="Sha1Encoder.Name Property " Url="html/d145a465-2fa9-28f3-0cca-bd862aac3a0f.htm" />
+    <HelpKINode Title="Sha224Encoder.Name Property " Url="html/75543527-022c-5073-ed73-7e3ecf796cd4.htm" />
+    <HelpKINode Title="Sha256Encoder.Name Property " Url="html/081a4900-e0b7-5989-e11f-c89d521cf44e.htm" />
+    <HelpKINode Title="Sha384Encoder.Name Property " Url="html/8183b96d-fee1-9ee1-6056-0847a9475cdd.htm" />
+    <HelpKINode Title="Sha512Encoder.Name Property " Url="html/8180e18e-c233-88ef-cdec-18c2f0501a35.htm" />
+    <HelpKINode Title="TitleCaseEncoder.Name Property " Url="html/c1122723-f713-362d-9eb2-bc0f019c80fc.htm" />
+    <HelpKINode Title="TripleDesEncoder.Name Property " Url="html/76e8f88a-67d6-7b07-01a7-7335e3701740.htm" />
+    <HelpKINode Title="UnixCryptEncoder.Name Property " Url="html/a971ff56-f8f7-83cc-74d0-9013e2100ac0.htm" />
+    <HelpKINode Title="UpperCaseEncoder.Name Property " Url="html/cb96df3a-201c-4b47-8698-c5fc712d4d3b.htm" />
+    <HelpKINode Title="XmlEncoder.Name Property " Url="html/9180d46d-da90-8e10-1a50-1d52562f7827.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomAsciiEncoder class">
+    <HelpKINode Title="RandomAsciiEncoder Class" Url="html/05d1efdd-566a-9929-8a58-e8fc3efb5988.htm" />
+    <HelpKINode Title="RandomAsciiEncoder Members" Url="html/a92034c4-49b0-c2c1-79c7-a671d09c3b71.htm" />
+    <HelpKINode Title="about RandomAsciiEncoder class" Url="html/05d1efdd-566a-9929-8a58-e8fc3efb5988.htm" />
+    <HelpKINode Title="all members" Url="html/a92034c4-49b0-c2c1-79c7-a671d09c3b71.htm" />
+    <HelpKINode Title="constructor" Url="html/d6e28ad5-93dc-79b7-2c25-8cb3573e9123.htm" />
+    <HelpKINode Title="methods" Url="html/ff032abe-3368-ea44-3a4c-8c9ddea2971d.htm" />
+    <HelpKINode Title="properties" Url="html/17479ff9-0cee-6073-eb65-e879f233092a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomAsciiEncoder.Description property" Url="html/5981bbd1-bb1c-cf67-ee54-e79dc84e6752.htm" />
+  <HelpKINode Title="RandomAsciiEncoder.Encode method" Url="html/91f58a35-4853-95b9-ea35-2d11c1e31a84.htm" />
+  <HelpKINode Title="RandomAsciiEncoder.Name property" Url="html/46d53aa3-890e-d284-de12-a1a5d75cf03b.htm" />
+  <HelpKINode Title="RandomAsciiEncoder.RandomAsciiEncoder constructor" Url="html/d6e28ad5-93dc-79b7-2c25-8cb3573e9123.htm" />
+  <HelpKINode Title="Sha1Encoder class">
+    <HelpKINode Title="Sha1Encoder Class" Url="html/4248ebb4-b979-dcc3-1df2-be1ec73459b7.htm" />
+    <HelpKINode Title="Sha1Encoder Members" Url="html/0b0a1cff-03aa-56b6-7935-6310a2c87514.htm" />
+    <HelpKINode Title="about Sha1Encoder class" Url="html/4248ebb4-b979-dcc3-1df2-be1ec73459b7.htm" />
+    <HelpKINode Title="all members" Url="html/0b0a1cff-03aa-56b6-7935-6310a2c87514.htm" />
+    <HelpKINode Title="constructor" Url="html/b9e06bdd-30eb-1e5b-8b18-2a9bb59ad9fc.htm" />
+    <HelpKINode Title="methods" Url="html/dc0378fd-67bc-1c8b-e842-5a8d909ad861.htm" />
+    <HelpKINode Title="properties" Url="html/df1210a2-6fb5-b136-e182-522f83da6750.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sha1Encoder.Description property" Url="html/753b50c9-d910-c0e6-f0fe-4063ffee4799.htm" />
+  <HelpKINode Title="Sha1Encoder.Encode method" Url="html/c1756a37-d566-2b8f-2a69-31bdb4fe4754.htm" />
+  <HelpKINode Title="Sha1Encoder.Name property" Url="html/d145a465-2fa9-28f3-0cca-bd862aac3a0f.htm" />
+  <HelpKINode Title="Sha1Encoder.Sha1Encoder constructor" Url="html/b9e06bdd-30eb-1e5b-8b18-2a9bb59ad9fc.htm" />
+  <HelpKINode Title="Sha224Encoder class">
+    <HelpKINode Title="Sha224Encoder Class" Url="html/89a070a8-53c0-608f-2db1-df32c80b2406.htm" />
+    <HelpKINode Title="Sha224Encoder Members" Url="html/3e763617-74ac-81f4-ef6c-29e6dbefddfe.htm" />
+    <HelpKINode Title="about Sha224Encoder class" Url="html/89a070a8-53c0-608f-2db1-df32c80b2406.htm" />
+    <HelpKINode Title="all members" Url="html/3e763617-74ac-81f4-ef6c-29e6dbefddfe.htm" />
+    <HelpKINode Title="constructor" Url="html/4392f1ee-0fde-6dfc-4dec-cb5bb60fd1f4.htm" />
+    <HelpKINode Title="methods" Url="html/76c6071a-f9df-b970-f468-935e0a54174a.htm" />
+    <HelpKINode Title="properties" Url="html/08d54508-0b75-2c93-e8a8-3f516a68d1e4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sha224Encoder.Description property" Url="html/4ee11ee1-747b-9587-65a6-9b1c0af52f25.htm" />
+  <HelpKINode Title="Sha224Encoder.Encode method" Url="html/1b3efb2a-be8d-d463-bebc-d5d136d3428b.htm" />
+  <HelpKINode Title="Sha224Encoder.Name property" Url="html/75543527-022c-5073-ed73-7e3ecf796cd4.htm" />
+  <HelpKINode Title="Sha224Encoder.Sha224Encoder constructor" Url="html/4392f1ee-0fde-6dfc-4dec-cb5bb60fd1f4.htm" />
+  <HelpKINode Title="Sha256Encoder class">
+    <HelpKINode Title="Sha256Encoder Class" Url="html/1bc6a42e-1a23-2d87-40b9-8b0f8a8bee48.htm" />
+    <HelpKINode Title="Sha256Encoder Members" Url="html/2ea92470-a8a5-76bb-d106-2e331151d09f.htm" />
+    <HelpKINode Title="about Sha256Encoder class" Url="html/1bc6a42e-1a23-2d87-40b9-8b0f8a8bee48.htm" />
+    <HelpKINode Title="all members" Url="html/2ea92470-a8a5-76bb-d106-2e331151d09f.htm" />
+    <HelpKINode Title="constructor" Url="html/4c0db3d5-2e27-4cc3-43b4-928fea33d45c.htm" />
+    <HelpKINode Title="methods" Url="html/f9ee665b-673c-d25b-e91c-62cc359df0c3.htm" />
+    <HelpKINode Title="properties" Url="html/2bcbfccd-feac-4d0e-64ba-54e62f791ff9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sha256Encoder.Description property" Url="html/0820240d-f29f-d720-1c1e-076a18401dc1.htm" />
+  <HelpKINode Title="Sha256Encoder.Encode method" Url="html/b1fdc3dd-1df1-b9ae-3cab-3bc2284f3eee.htm" />
+  <HelpKINode Title="Sha256Encoder.Name property" Url="html/081a4900-e0b7-5989-e11f-c89d521cf44e.htm" />
+  <HelpKINode Title="Sha256Encoder.Sha256Encoder constructor" Url="html/4c0db3d5-2e27-4cc3-43b4-928fea33d45c.htm" />
+  <HelpKINode Title="Sha384Encoder class">
+    <HelpKINode Title="Sha384Encoder Class" Url="html/71005b4f-ba34-d923-f6cc-cbb928237643.htm" />
+    <HelpKINode Title="Sha384Encoder Members" Url="html/ae358f5a-ca95-4c86-e96a-ea4ee33379ab.htm" />
+    <HelpKINode Title="about Sha384Encoder class" Url="html/71005b4f-ba34-d923-f6cc-cbb928237643.htm" />
+    <HelpKINode Title="all members" Url="html/ae358f5a-ca95-4c86-e96a-ea4ee33379ab.htm" />
+    <HelpKINode Title="constructor" Url="html/380d8adf-c0f1-88f9-1e93-b3a036a8db53.htm" />
+    <HelpKINode Title="methods" Url="html/7fbe661a-8bec-dcfe-ebd2-ffe44945ba22.htm" />
+    <HelpKINode Title="properties" Url="html/72fa2b66-1634-8ae5-8bd2-dd30985b3a85.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sha384Encoder.Description property" Url="html/10d42523-54de-4378-5d39-0e6dcd11fa7d.htm" />
+  <HelpKINode Title="Sha384Encoder.Encode method" Url="html/9cf7fc48-aaf3-ccbf-1b23-362a2d091dc8.htm" />
+  <HelpKINode Title="Sha384Encoder.Name property" Url="html/8183b96d-fee1-9ee1-6056-0847a9475cdd.htm" />
+  <HelpKINode Title="Sha384Encoder.Sha384Encoder constructor" Url="html/380d8adf-c0f1-88f9-1e93-b3a036a8db53.htm" />
+  <HelpKINode Title="Sha512Encoder class">
+    <HelpKINode Title="Sha512Encoder Class" Url="html/6e39b1e3-2409-be0f-16fd-516cb463693d.htm" />
+    <HelpKINode Title="Sha512Encoder Members" Url="html/7a009982-40ba-01b0-af2b-a1dd6fb8f0ff.htm" />
+    <HelpKINode Title="about Sha512Encoder class" Url="html/6e39b1e3-2409-be0f-16fd-516cb463693d.htm" />
+    <HelpKINode Title="all members" Url="html/7a009982-40ba-01b0-af2b-a1dd6fb8f0ff.htm" />
+    <HelpKINode Title="constructor" Url="html/5297aadc-d2ed-50db-19af-b3f11379a4c5.htm" />
+    <HelpKINode Title="methods" Url="html/0bb5b177-76ad-6cdb-fa11-54cc0d8488cb.htm" />
+    <HelpKINode Title="properties" Url="html/6bf831d5-ae8c-23ca-0425-3fd6bc9d12ab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sha512Encoder.Description property" Url="html/9321e181-08f4-3469-b0fa-f90a69abe37f.htm" />
+  <HelpKINode Title="Sha512Encoder.Encode method" Url="html/4bb1d522-09e9-a5ac-8d63-7b2c2b8c0284.htm" />
+  <HelpKINode Title="Sha512Encoder.Name property" Url="html/8180e18e-c233-88ef-cdec-18c2f0501a35.htm" />
+  <HelpKINode Title="Sha512Encoder.Sha512Encoder constructor" Url="html/5297aadc-d2ed-50db-19af-b3f11379a4c5.htm" />
+  <HelpKINode Title="TitleCaseEncoder class">
+    <HelpKINode Title="TitleCaseEncoder Class" Url="html/d1d2c21a-04a4-f3ae-69a5-db104d29848f.htm" />
+    <HelpKINode Title="TitleCaseEncoder Members" Url="html/1bfb7151-3d37-e07c-b412-3a1b363a41f1.htm" />
+    <HelpKINode Title="about TitleCaseEncoder class" Url="html/d1d2c21a-04a4-f3ae-69a5-db104d29848f.htm" />
+    <HelpKINode Title="all members" Url="html/1bfb7151-3d37-e07c-b412-3a1b363a41f1.htm" />
+    <HelpKINode Title="constructor" Url="html/4a790ebd-f2ec-161d-80b2-608b50d4b2b7.htm" />
+    <HelpKINode Title="methods" Url="html/598a599d-5c36-bebf-f36f-a55a7045ad69.htm" />
+    <HelpKINode Title="properties" Url="html/a3524361-506f-4997-615d-1510124f64b1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TitleCaseEncoder.Description property" Url="html/450ad40a-2c7d-8bc8-c978-73454a69aac0.htm" />
+  <HelpKINode Title="TitleCaseEncoder.Encode method" Url="html/7f3d32c9-5d19-f681-33ba-bc04f42db636.htm" />
+  <HelpKINode Title="TitleCaseEncoder.Name property" Url="html/c1122723-f713-362d-9eb2-bc0f019c80fc.htm" />
+  <HelpKINode Title="TitleCaseEncoder.TitleCaseEncoder constructor" Url="html/4a790ebd-f2ec-161d-80b2-608b50d4b2b7.htm" />
+  <HelpKINode Title="TripleDesEncoder class">
+    <HelpKINode Title="TripleDesEncoder Class" Url="html/c398280e-af17-7c09-34d9-227f3d398c32.htm" />
+    <HelpKINode Title="TripleDesEncoder Members" Url="html/388610e2-f131-a60f-cf04-8f84bffae003.htm" />
+    <HelpKINode Title="about TripleDesEncoder class" Url="html/c398280e-af17-7c09-34d9-227f3d398c32.htm" />
+    <HelpKINode Title="all members" Url="html/388610e2-f131-a60f-cf04-8f84bffae003.htm" />
+    <HelpKINode Title="constructor" Url="html/7d4d64b5-a9fa-1851-a906-020bc93359fb.htm" />
+    <HelpKINode Title="methods" Url="html/b030775f-5c09-f732-9ce6-fe24072de446.htm" />
+    <HelpKINode Title="properties" Url="html/3af1135f-daad-9a1b-e85f-216278166198.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TripleDesEncoder.Description property" Url="html/c02d1703-75da-bd81-4f48-fbfb5ef066de.htm" />
+  <HelpKINode Title="TripleDesEncoder.Encode method" Url="html/52ce56fc-1330-6e44-ec51-0ee251c6615a.htm" />
+  <HelpKINode Title="TripleDesEncoder.Name property" Url="html/76e8f88a-67d6-7b07-01a7-7335e3701740.htm" />
+  <HelpKINode Title="TripleDesEncoder.TripleDesEncoder constructor" Url="html/7d4d64b5-a9fa-1851-a906-020bc93359fb.htm" />
+  <HelpKINode Title="UnixCryptEncoder class">
+    <HelpKINode Title="UnixCryptEncoder Class" Url="html/a880f3d6-12c6-a036-2e4f-02170756f41e.htm" />
+    <HelpKINode Title="UnixCryptEncoder Members" Url="html/59c17eb6-111a-58ea-ca4b-181a06a47271.htm" />
+    <HelpKINode Title="about UnixCryptEncoder class" Url="html/a880f3d6-12c6-a036-2e4f-02170756f41e.htm" />
+    <HelpKINode Title="all members" Url="html/59c17eb6-111a-58ea-ca4b-181a06a47271.htm" />
+    <HelpKINode Title="constructor" Url="html/76edba7d-d096-77ff-7c05-360b9cb0d263.htm" />
+    <HelpKINode Title="methods" Url="html/a04b36db-9d85-2322-4c5b-c8896a104f0e.htm" />
+    <HelpKINode Title="properties" Url="html/be58f46d-754c-271f-ce13-28119fbed692.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UnixCryptEncoder.Description property" Url="html/d1f225ab-f78b-20b8-a7d6-7605002441cb.htm" />
+  <HelpKINode Title="UnixCryptEncoder.Encode method" Url="html/8323c34b-1985-6d66-e7e1-3654dec31cd8.htm" />
+  <HelpKINode Title="UnixCryptEncoder.Name property" Url="html/a971ff56-f8f7-83cc-74d0-9013e2100ac0.htm" />
+  <HelpKINode Title="UnixCryptEncoder.UnixCryptEncoder constructor" Url="html/76edba7d-d096-77ff-7c05-360b9cb0d263.htm" />
+  <HelpKINode Title="UpperCaseEncoder class">
+    <HelpKINode Title="UpperCaseEncoder Class" Url="html/39892207-61b0-532e-97cc-be9078282e07.htm" />
+    <HelpKINode Title="UpperCaseEncoder Members" Url="html/e4ae54e7-f21e-6562-4f00-2484cbe68c82.htm" />
+    <HelpKINode Title="about UpperCaseEncoder class" Url="html/39892207-61b0-532e-97cc-be9078282e07.htm" />
+    <HelpKINode Title="all members" Url="html/e4ae54e7-f21e-6562-4f00-2484cbe68c82.htm" />
+    <HelpKINode Title="constructor" Url="html/5e7c1c62-ed92-258e-9bf1-cc9b1ad8d589.htm" />
+    <HelpKINode Title="methods" Url="html/db2887e7-0589-6a94-fe5b-457532d2b9e5.htm" />
+    <HelpKINode Title="properties" Url="html/c0f70691-dc1f-0df0-0ddb-799c042da7fa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpperCaseEncoder.Description property" Url="html/3d1f5d23-616a-217e-d4a6-a8045fc3b0a7.htm" />
+  <HelpKINode Title="UpperCaseEncoder.Encode method" Url="html/b51ef1bb-6df0-1ee2-b742-b49105b92e8c.htm" />
+  <HelpKINode Title="UpperCaseEncoder.Name property" Url="html/cb96df3a-201c-4b47-8698-c5fc712d4d3b.htm" />
+  <HelpKINode Title="UpperCaseEncoder.UpperCaseEncoder constructor" Url="html/5e7c1c62-ed92-258e-9bf1-cc9b1ad8d589.htm" />
+  <HelpKINode Title="XmlEncoder class">
+    <HelpKINode Title="XmlEncoder Class" Url="html/e070c6d8-28ad-6261-805e-cf9891797de5.htm" />
+    <HelpKINode Title="XmlEncoder Members" Url="html/ecd50935-0496-ef04-e92d-b3de2592c36d.htm" />
+    <HelpKINode Title="about XmlEncoder class" Url="html/e070c6d8-28ad-6261-805e-cf9891797de5.htm" />
+    <HelpKINode Title="all members" Url="html/ecd50935-0496-ef04-e92d-b3de2592c36d.htm" />
+    <HelpKINode Title="constructor" Url="html/39a756b2-5f52-99ed-777c-37d2720eb04c.htm" />
+    <HelpKINode Title="methods" Url="html/728e3f8c-9792-dfab-e506-fefdcd7889e9.htm" />
+    <HelpKINode Title="properties" Url="html/dec8db0e-fd38-c71e-2fbe-ca2858d66bd8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="XmlEncoder.Description property" Url="html/ef300558-6f3d-3cec-f07c-784910d80091.htm" />
+  <HelpKINode Title="XmlEncoder.Encode method" Url="html/b88c73d8-c727-de4e-a45b-3354c3f64942.htm" />
+  <HelpKINode Title="XmlEncoder.Name property" Url="html/9180d46d-da90-8e10-1a50-1d52562f7827.htm" />
+  <HelpKINode Title="XmlEncoder.XmlEncoder constructor" Url="html/39a756b2-5f52-99ed-777c-37d2720eb04c.htm" />
+</HelpKI>
