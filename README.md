@@ -1,5 +1,5 @@
 # Crypt.cs
-![Screenshot](http://dev.belin.io/crypt.cs/raw/master/web/screenshot.png)
+![Screenshot](http://dev.belin.io/crypt.cs/raw/gh-pages/screenshot.png)
 
 Simple string encoder (Base64, CRC32, DES, MD, SHA...), implemented in [C#](https://www.microsoft.com/net).  
 This program uses the [MiniFramework.cs](http://dev.belin.io/miniframework.cs) library.
