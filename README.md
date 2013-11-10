@@ -1,5 +1,5 @@
 # Crypt.cs
-![Screenshot](https://github.com/cedx/crypt.cs/raw/gh-pages/screenshot.png)
+![Screenshot](http://cedx.github.io/crypt.cs/screenshot.png)
 
 Simple string encoder (Base64, CRC32, DES, MD, SHA...), implemented in [C#](https://www.microsoft.com/net).  
 This program uses the [MiniFramework.cs](https://github.com/cedx/miniframework.cs) library.
