@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Crypt.Core")]
 [assembly: AssemblyDescription("String Encoding Tool")]
-[assembly: AssemblyVersion("1.3.0.9999")]
+[assembly: AssemblyVersion("0.4.0.2013")]
 
 [assembly: AssemblyProduct("Crypt.cs")]
 [assembly: AssemblyCompany("Cédric Belin")]

@@ -23,7 +23,7 @@ namespace Crypt {
 
           // Détermination de l'emplacement des greffons
           var startupPath=Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-          var addinsPath=Path.Combine(startupPath, "AddIns");
+          var addinsPath=Path.Combine(startupPath, "addins");
 
           // Recherche des greffons
           if(Directory.Exists(addinsPath)) {
