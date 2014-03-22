@@ -7,7 +7,7 @@ This program uses the [MiniFramework.cs](https://github.com/cedx/miniframework.c
 ## Command Line Interface
 In addition to the graphical user interface, you can also use the application from the command prompt:
 
-    $ ./crypt.console.exe -h
+    > .\crypt.console.exe -h
     
     Encode a message by applying a hash algorithm.
     
