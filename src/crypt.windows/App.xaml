@@ -1,0 +1,24 @@
+﻿<!--
+<summary>
+  Code XAML de la classe <c>Crypt.Windows.App</c>.</summary>
+<author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+-->
+
+<Application
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+  x:Class="Crypt.Windows.App"
+  x:ClassModifier="internal"
+  Exit="OnApplicationExit"
+  Startup="OnApplicationStartup"
+  StartupUri="MainWindow.xaml">
+
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MiniFramework.Windows;component/Themes/Generic.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D02BFB1B-0D75-4C4B-9DF7-3760FC7A0046}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>properties</AppDesignerFolder>
+    <RootNamespace>Crypt.Encoders</RootNamespace>
+    <AssemblyName>crypt.encoders</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\bin\debug\crypt.encoders.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MiniFramework.Core, Version=1.0.0.1412, Culture=neutral, PublicKeyToken=d56604c5de958974, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\miniframework\miniframework.core.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniFramework.Web, Version=1.0.0.1412, Culture=neutral, PublicKeyToken=d56604c5de958974, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\miniframework\miniframework.web.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\mono\mono.security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base64Encoder.cs" />
+    <Compile Include="Crc32Encoder.cs" />
+    <Compile Include="DesEncoder.cs" />
+    <Compile Include="HtmlEncoder.cs" />
+    <Compile Include="LowerCaseEncoder.cs" />
+    <Compile Include="MD2Encoder.cs" />
+    <Compile Include="MD4Encoder.cs" />
+    <Compile Include="MD5Encoder.cs" />
+    <Compile Include="properties\AssemblyInfo.cs" />
+    <Compile Include="properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RandomAsciiEncoder.cs" />
+    <Compile Include="Sha1Encoder.cs" />
+    <Compile Include="Sha224Encoder.cs" />
+    <Compile Include="Sha256Encoder.cs" />
+    <Compile Include="Sha384Encoder.cs" />
+    <Compile Include="Sha512Encoder.cs" />
+    <Compile Include="TitleCaseEncoder.cs" />
+    <Compile Include="TripleDesEncoder.cs" />
+    <Compile Include="internal\UnixCrypt.cs" />
+    <Compile Include="UnixCryptEncoder.cs" />
+    <Compile Include="UpperCaseEncoder.cs" />
+    <Compile Include="XmlEncoder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\crypt.core\crypt.core.csproj">
+      <Project>{B8B70DBF-F383-4285-BE0D-2948AA847B0E}</Project>
+      <Name>Crypt.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="properties\Resources.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir $(TargetDir)addins
+move $(TargetPath) $(TargetDir)addins</PostBuildEvent>
+  </PropertyGroup>
+</Project>

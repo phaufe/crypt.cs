@@ -1,0 +1,16 @@
+* text=auto
+
+.gitattributes text
+.gitignore text
+*.config text
+*.cs text
+*.csproj text
+*.md text
+*.resx text
+*.settings text
+*.sln text
+*.xaml text
+
+*.dll binary
+*.ico binary
+*.png binary
