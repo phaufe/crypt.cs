@@ -1,4 +1,5 @@
 /*.suo
-/bin/
+/bin/debug/
+/bin/release/
 /src/*/*proj.user
 /src/*/obj/
