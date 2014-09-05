@@ -1,5 +1,6 @@
 /*.suo
 /bin/debug/
 /bin/release/
+/doc/api/
 /src/*/*proj.user
 /src/*/obj/
