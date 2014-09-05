@@ -1,28 +1,45 @@
-﻿// <summary>Implémentation de l'interface <c>Crypt.IStringEncoder</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+﻿/**
+ * Implementation of the `Crypt.IStringEncoder` interface.
+ * @module core/IStringEncoder
+ */
 
 namespace Crypt {
   using System;
   using System.Linq;
   
-  /// <summary>Représente un codeur de chaînes de caractères.</summary>
+  /**
+   * Represents a string encoder.
+   * @class Crypt.IStringEncoder
+   * @static
+   */
   public interface IStringEncoder {
   
-    /// <summary>Obtient la description de ce codeur de chaîne.</summary>
-    /// <value>Description du codeur de chaîne.</value>
+    /**
+     * The encoder description.
+     * @property Description
+     * @type System.String
+     * @final
+     */
     string Description {
       get;
     }
 
-    /// <summary>Obtient le nom de ce codeur de chaîne.</summary>
-    /// <value>Nom du codeur de chaîne.</value>
+    /**
+     * The encoder name.
+     * @property Name
+     * @type System.String
+     * @final
+     */
     string Name {
       get;
     }
 
-    /// <summary>Code la chaîne spécifiée.</summary>
-    /// <param name="text">Chaîne à coder.</param>
-    /// <returns>Chaîne après codage.</returns>
+    /**
+     * Encodes the specified string.
+     * @method Encode
+     * @param {System.String} text The string to encode.
+     * @return {System.String} The encoded string.
+     */
     string Encode(string text);
   }
 }

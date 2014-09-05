@@ -1,8 +1,13 @@
 {
+  "author": "Cédric Belin <cedric@belin.io>",
+  "bugs": "https://github.com/cedx/crypt.cs/issues",
+  "description": "Simple string encoder (Base64, CRC32, DES, MD, SHA...).",
+  "homepage": "https://github.com/cedx/crypt.cs",
+  "license": "MIT",
   "name": "crypt-cs",
   "private": true,
   "version": "0.4.0.2014",
-  "dependencies": {
+  "devDependencies": {
     "jshint": "^2.5.2",
     "shelljs": "^0.3.0",
     "yuidoc-bs": "^0.1.0"

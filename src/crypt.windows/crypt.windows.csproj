@@ -118,9 +118,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Content Include="app.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="app.config" />
     <None Include="key.snk" />
     <None Include="resources\app.ico" />
     <None Include="properties\Settings.settings">
@@ -171,7 +169,7 @@
   <ItemGroup>
     <ProjectReference Include="..\crypt.core\crypt.core.csproj">
       <Project>{B8B70DBF-F383-4285-BE0D-2948AA847B0E}</Project>
-      <Name>Crypt.Core</Name>
+      <Name>crypt.core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

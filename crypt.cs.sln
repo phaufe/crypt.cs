@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypt.encoders", "src\crypt.encoders\crypt.encoders.csproj", "{D02BFB1B-0D75-4C4B-9DF7-3760FC7A0046}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypt.core", "src\crypt.core\crypt.core.csproj", "{B8B70DBF-F383-4285-BE0D-2948AA847B0E}"
@@ -8,6 +10,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypt.windows", "src\crypt.windows\crypt.windows.csproj", "{90C905BF-40CE-4F36-AF0F-5466E730079F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypt.console", "src\crypt.console\crypt.console.csproj", "{4CED9EB4-CD48-4B03-BED6-9922391B899F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "etc", "etc", "{411F00E7-5240-4321-9ACB-F66DE68733A7}"
+	ProjectSection(SolutionItems) = preProject
+		package.json = package.json
+		yuidoc.json = yuidoc.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{269A3AF3-ACF8-4CD7-B91F-BEC98664EB75}"
+	ProjectSection(SolutionItems) = preProject
+		bin\make.cmd = bin\make.cmd
+		bin\make.js = bin\make.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

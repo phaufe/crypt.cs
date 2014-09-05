@@ -118,7 +118,7 @@
   <ItemGroup>
     <ProjectReference Include="..\crypt.core\crypt.core.csproj">
       <Project>{B8B70DBF-F383-4285-BE0D-2948AA847B0E}</Project>
-      <Name>Crypt.Core</Name>
+      <Name>crypt.core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

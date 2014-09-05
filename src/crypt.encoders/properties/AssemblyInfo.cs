@@ -1,5 +1,7 @@
-﻿// <summary>Informations de version de l'assemblage <c>Crypt.Encoders</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+﻿/**
+ * The properties of `Crypt.Encoders` assembly.
+ * @module encoders/properties/AssemblyInfo
+ */
 
 using System;
 using System.Reflection;
@@ -8,7 +10,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Crypt.Encoders")]
 [assembly: AssemblyDescription("String Encoding Tool")]
-[assembly: AssemblyVersion("0.4.0.2013")]
+[assembly: AssemblyVersion("0.4.0.2014")]
 
 [assembly: AssemblyProduct("Crypt.cs")]
 [assembly: AssemblyCompany("Cédric Belin")]

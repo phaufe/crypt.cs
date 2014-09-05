@@ -1,5 +1,7 @@
-﻿// <summary>Implémentation de la classe <c>Crypt.EncoderManager</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+﻿/**
+ * Implementation of the `Crypt.EncoderManager` class.
+ * @module core/EncoderManager
+ */
 
 namespace Crypt {
   using System;
@@ -8,14 +10,20 @@ namespace Crypt {
   using System.Linq;
   using System.Reflection;
   
-  /// <summary>Facilite l'accès aux codeurs de chaînes de caractères au moment de l'exécution.</summary>
+  /**
+   * Facilitates access to the string encoders at run time.
+   * @class Crypt.EncoderManager
+   * @static
+   */
   public static class EncoderManager {
   
-    /// <summary>Liste de tous les codeurs de chaîne disponibles.</summary>
+    /**
+     * The list of all available string encoders.
+     * @property Encoders
+     * @type System.Collections.Generic.IList<Crypt.IStringEncoder>
+     * @static
+     */
     private static IList<IStringEncoder> encoders;
-
-    /// <summary>Obtient la liste de tous les codeurs de chaîne disponibles.</summary>
-    /// <value>Liste de tous les codeurs de chaîne disponibles.</value>
     public static IList<IStringEncoder> Encoders {
       get {
         if(encoders==null) {

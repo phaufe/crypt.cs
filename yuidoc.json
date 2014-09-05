@@ -1,0 +1,11 @@
+{
+  "logo": "http://dev.belin.io/crypt.cs/favicon.ico",
+  "name": "Crypt.cs",
+  "url": "https://github.com/cedx/crypt.cs",
+  "options": {
+    "linkNatives": false,
+    "outdir": "doc/api",
+    "paths": "src",
+    "tabtospace": 2
+  }
+}

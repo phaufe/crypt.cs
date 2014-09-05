@@ -1,5 +1,7 @@
-// <summary>Implémentation de la classe <c>Crypt.Encoders.MD5Encoder</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+/**
+ * Implementation of the `Crypt.Encoders.MD5Encoder` class.
+ * @module encoders/MD5Encoder
+ */
 
 namespace Crypt.Encoders {
   using System;
@@ -8,27 +10,42 @@ namespace Crypt.Encoders {
   using Crypt.Encoders.Properties;
   using MiniFramework.Security.Cryptography;
   
-  /// <summary>Représente la méthode de codage MD5.</summary>
+  /**
+   * Represents the MD5 encoding method.
+   * @class Crypt.Encoders.MD5Encoder
+   * @constructor
+   * @extends Crypt.IStringEncoder
+   */
   public class MD5Encoder: IStringEncoder {
   
-    /// <summary>Initialise une nouvelle instance de la classe <see cref="MD5Encoder" />.</summary>
     public MD5Encoder() {}
 
-    /// <summary>Obtient la description de ce codeur de chaîne.</summary>
-    /// <value>Description du codeur de chaîne.</value>
+    /**
+     * The encoder description.
+     * @property Description
+     * @type System.String
+     * @final
+     */
     public string Description {
       get { return Resources.MD5Description; }
     }
 
-    /// <summary>Obtient le nom de ce codeur de chaîne.</summary>
-    /// <value>Nom du codeur de chaîne.</value>
+    /**
+     * The encoder name.
+     * @property Name
+     * @type System.String
+     * @final
+     */
     public string Name {
       get { return "MD5"; }
     }
 
-    /// <summary>Code la chaîne spécifiée.</summary>
-    /// <param name="text">Chaîne à coder.</param>
-    /// <returns>Chaîne après codage.</returns>
+    /**
+     * Encodes the specified string.
+     * @method Encode
+     * @param {System.String} text The string to encode.
+     * @return {System.String} The encoded string.
+     */
     public string Encode(string text) {
       return HashUtility.ComputeMD5(text);
     }

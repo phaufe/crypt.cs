@@ -1,5 +1,7 @@
-// <summary>Implémentation de la classe <c>Crypt.Windows.App</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+/**
+ * Implementation of the `Crypt.Console.Program` class.
+ * @module console/Program
+ */
 
 namespace Crypt.Console {
   using System;
@@ -11,22 +13,42 @@ namespace Crypt.Console {
   using MiniFramework.Reflection;
   using Mono.Options;
 
-  /// <summary>Application console.</summary>
-  internal class Program {
+  /**
+   * Console application.
+   * @class Crypt.Console.Program
+   * @static
+   */
+  internal static class Program {
   
-    /// <summary>Informations de l'assemblage de l'application.</summary>
+    /**
+     * Informations about the application assembly.
+     * @property appInfo
+     * @type MiniFramework.Reflection.AssemblyInfo
+     * @static
+     * @private
+     */
     private static AssemblyInfo appInfo=new AssemblyInfo(typeof(Program).Assembly);
     
-    /// <summary>Options de la ligne de commandes.</summary>
+    /**
+     * The command line options.
+     * @property options
+     * @type Mono.Options.OptionSet
+     * @static
+     * @private
+     */
     private static OptionSet options;
 
-    /// <summary>Point d'entrée du programme.</summary>
-    /// <param name="args">Arguments de la ligne de commandes.</param>
+    /**
+     * The application entry point.
+     * @method Main
+     * @param {System.String[]} args The command line arguments.
+     * @static
+     * @private
+     */
     private static void Main(string[] args) {
-      // Validation de l'installation
       CheckSetup();
 
-      // Paramétrage des options de ligne de commandes
+      // Set default command line options.
       bool printHelp=false;
       bool printList=false;
       bool printVersion=false;
@@ -37,7 +59,7 @@ namespace Crypt.Console {
         { "v|version", Resources.VersionOption, x=> printVersion=(x!=null) }
       };
 
-      // Analyse de la ligne de commandes
+      // Parse command line arguments.
       List<string> parameters=null;
       try { parameters=options.Parse(args); }
 
@@ -48,25 +70,25 @@ namespace Crypt.Console {
         return;
       }
 
-      // Affiche l'aide détaillée
+      // Print the detailed help.
       if(printHelp) {
         PrintHelp();
         return;
       }
 
-      // Affiche la liste des algorithmes de hachage
+      // Prints the list of hash algorithms.
       if(printList) {
         PrintEncoderList();
         return;
       }
 
-      // Affiche le numéro de version
+      // Prints the version number.
       if(printVersion) {
         PrintVersion();
         return;
       }
 
-      // Codage de la chaîne
+      // Encode the specified string.
       if(parameters==null || parameters.Count!=2) {
         Console.WriteLine();
         Console.WriteLine(Resources.SyntaxError);
@@ -77,8 +99,13 @@ namespace Crypt.Console {
       PrintEncodedString(parameters[0], parameters[1]);
     }
 
-    /// <summary>Vérifie que toutes les conditions sont réunies pour le démarrage de l'application.</summary>
-    /// <remarks>Si aucun codeur de chaîne ne peut être trouvé, un message est affiché à l'utilisateur et l'application arrêtée.</remarks>
+    /**
+     * Checks that all conditions are met for application startup.
+     * If no string encoder can be found, a message is displayed to the user and the application terminated.
+     * @method CheckSetup
+     * @static
+     * @private
+     */
     private static void CheckSetup() {
       if(EncoderManager.Encoders.Count==0) {
         Console.WriteLine();
@@ -89,9 +116,14 @@ namespace Crypt.Console {
       }
     }
 
-    /// <summary>Affiche la chaîne spécifiée codée par l'algorithme de hachage spécifié.</summary>
-    /// <param name="encodingMethod">Nom de la méthode de codage à utiliser.</param>
-    /// <param name="stringToEncode">Chaîne à coder.</param>
+    /**
+     * Encodes and prints a given string using the specified encoding method.
+     * @method PrintEncodedString
+     * @param {System.String} encodingMethod The name of the encoding method to use.
+     * @param {System.String} stringToEncode The string to be encoded.
+     * @static
+     * @private
+     */
     private static void PrintEncodedString(string encodingMethod, string stringToEncode) {
       Console.WriteLine();
 
@@ -107,7 +139,12 @@ namespace Crypt.Console {
       Console.WriteLine();
     }
 
-    /// <summary>Affiche la liste des codeurs de chaîne supportés par l'application.</summary>
+    /**
+     * Prints the list of supported string encoders.
+     * @method PrintEncoderList
+     * @static
+     * @private
+     */
     private static void PrintEncoderList() {
       Console.WriteLine();
       
@@ -119,14 +156,24 @@ namespace Crypt.Console {
       Console.WriteLine();
     }
 
-    /// <summary>Affiche l'aide détaillée.</summary>
+    /**
+     * Prints the detailed help.
+     * @method PrintHelp
+     * @static
+     * @private
+     */
     private static void PrintHelp() {
       Console.WriteLine();
       Console.WriteLine(Resources.Description);
       PrintUsage();
     }
 
-    /// <summary>Affiche la syntaxe d'utilisation du programme.</summary>
+    /**
+     * Prints the program usage.
+     * @method PrintUsage
+     * @static
+     * @private
+     */
     private static void PrintUsage() {
       Console.WriteLine();
       Console.WriteLine(Resources.Usage, appInfo.Title);
@@ -136,7 +183,12 @@ namespace Crypt.Console {
       Console.WriteLine();
     }
 
-    /// <summary>Affiche les informations de version de l'application.</summary>
+    /**
+     * Prints informations about the program version.
+     * @method PrintVersion
+     * @static
+     * @private
+     */
     private static void PrintVersion() {
       Console.WriteLine();
       Console.WriteLine("{0} {1}", appInfo.Product, appInfo.Version);

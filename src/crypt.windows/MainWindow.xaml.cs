@@ -1,5 +1,7 @@
-﻿// <summary>Implémentation de la classe <c>Crypt.Windows.MainWindow</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+﻿/**
+ * Implementation of the `Crypt.Windows.MainWindow` class.
+ * @module windows/MainWindow
+ */
 
 namespace Crypt.Windows {
   using System;
@@ -20,18 +22,18 @@ namespace Crypt.Windows {
   using MiniFramework.Text;
   using MiniFramework.Windows;
 
-  /// <summary>Fenêtre principale.</summary>
+  /**
+   * Main window.
+   * @class Crypt.Windows.MainWindow
+   * @extends System.Windows.Window
+   * @constructor
+   */
   public partial class MainWindow: Window {
-  
-    /// <summary>La commande &quot;Afficher/masquer un contrôle&quot;.</summary>
-    public static readonly RoutedUICommand ShowHideCommand=new RoutedUICommand();
 
-    /// <summary>Initialise une nouvelle instance de la classe <see cref="MainWindow" />.</summary>
     public MainWindow() {
-      // Initialisation de l'interface graphique
       this.InitializeComponent();
 
-      // Contrôles de sélection de la culture
+      // Culture selectors.
       foreach(var item in Settings.Default.SupportedLanguages) this.CultureMenu.Cultures.AddLanguage(item, false);
       this.CultureMenu.SelectedCulture=CultureInfo.CurrentUICulture;
       this.CultureMenu.SelectedCultureChanged+=this.OnSelectedCultureChanged;
@@ -40,7 +42,7 @@ namespace Crypt.Windows {
       cultureButton.Tag="CultureControlStatusTip";
       this.ToolBar.Items.Insert(this.ToolBar.Items.IndexOf(this.AboutButton), cultureButton);
 
-      // Messages de la barre d'état : élements du menu
+      // Menu items.
       var product=Application.Current.Properties["Product"].ToString();
 
       foreach(MenuItem topLevelItem in this.MenuBar.Items) {
@@ -54,7 +56,7 @@ namespace Crypt.Windows {
         }
       }
 
-      // Messages de la barre d'état : boutons de la barre d'outils
+      // Toolbar buttons.
       foreach(var item in this.ToolBar.Items.OfType<ButtonBase>()) {
         var property=(item.Tag!=null) ? item.Tag.ToString() : ((RoutedCommand) item.Command).Name+"CommandStatusTip";
           
@@ -64,16 +66,29 @@ namespace Crypt.Windows {
         this.SetStatusTip(item, text);
       }
 
-      // Messages de la barre d'état : contrôles de la fenêtre
+      // Window controls.
       this.SetStatusTip(this.EncodeButton, Messages.EncodeButtonStatusTip);
       this.SetStatusTip(this.InputTextBox, Messages.InputTextBoxStatusTip);
       this.SetStatusTip(this.InputComboBox, Messages.InputComboBoxStatusTip);
       this.SetStatusTip(this.OutputTextBox, Messages.OutputTextBoxStatusTip);
     }
+  
+    /**
+     * The "Show/Hide Control" command.
+     * @property ShowHideCommand
+     * @type System.Windows.Input.RoutedUICommand
+     * @static
+     * @final
+     */
+    public static readonly RoutedUICommand ShowHideCommand=new RoutedUICommand();
 
-    /// <summary>Affiche la boîte de dialogue &quot;A propos&quot;.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
+    /**
+     * Shows the "About" box.
+     * @method OnAboutExecuted
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.Input.ExecutedRoutedEventArgs} e The event data.
+     * @private
+     */
     private void OnAboutExecuted(object sender, ExecutedRoutedEventArgs e) {
       var window=new AboutBox() {
         Authors=Application.Current.Properties["Authors"].ToString(),
@@ -88,25 +103,72 @@ namespace Crypt.Windows {
       window.ShowDialog();
     }
 
-    /// <summary>Ferme la fenêtre.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
+    /**
+     * Closes the window.
+     * @method OnCloseExecuted
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.Input.ExecutedRoutedEventArgs} e The event data.
+     * @private
+     */
     private void OnCloseExecuted(object sender, ExecutedRoutedEventArgs e) {
       this.Close();
       e.Handled=true;
     }
 
-    /// <summary>Ouvre une URL dans le navigateur par défaut.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
+    /**
+     * Displays in the status bar the text associated to a control.
+     * @method OnControlMouseEnter
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.Input.MouseEventArgs} e The event data.
+     * @private
+     */
+    private void OnControlMouseEnter(object sender, MouseEventArgs e) {
+      this.StatusImage.Visibility=Visibility.Visible;
+    }
+
+    /**
+     * Resets the status bar.
+     * @method OnControlMouseLeave
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.Input.MouseEventArgs} e The event data.
+     * @private
+     */
+    private void OnControlMouseLeave(object sender, MouseEventArgs e) {
+      this.StatusImage.Visibility=Visibility.Hidden;
+      this.StatusLabel.Text=string.Empty;
+    }
+
+    /**
+     * Encodes the string from the input field and puts the results into the output field.
+     * @method OnEncodeButtonClick
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.RoutedEventArgs} e The event data.
+     * @private
+     */
+    private void OnEncodeButtonClick(object sender, RoutedEventArgs e) {
+      this.OutputTextBox.Text=EncoderManager.Encoders[this.InputComboBox.SelectedIndex].Encode(this.InputTextBox.Text);
+      e.Handled=true;
+    }
+
+    /**
+     * Opens an URL in the default browser.
+     * @method OnOpenUrlExecuted
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.Input.ExecutedRoutedEventArgs} e The event data.
+     * @private
+     */
     private void OnOpenUrlExecuted(object sender, ExecutedRoutedEventArgs e) {
       new Uri(Settings.Default.WebSite, e.Parameter as Uri).Open();
       e.Handled=true;
     }
 
-    /// <summary>Affiche ou masque un contrôle.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
+    /**
+     * Shows or hides a control.
+     * @method OnShowHideExecuted
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.Input.ExecutedRoutedEventArgs} e The event data.
+     * @private
+     */
     private void OnShowHideExecuted(object sender, ExecutedRoutedEventArgs e) {
       if(e.Parameter!=null) {
         var control=this.FindName(e.Parameter.ToString()) as Control;
@@ -115,32 +177,13 @@ namespace Crypt.Windows {
       }
     }
 
-    /// <summary>Affiche le texte associé à un contrôle dans la barre d'état.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
-    private void OnControlMouseEnter(object sender, MouseEventArgs e) {
-      this.StatusImage.Visibility=Visibility.Visible;
-    }
-
-    /// <summary>Réinitialise la barre d'état.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
-    private void OnControlMouseLeave(object sender, MouseEventArgs e) {
-      this.StatusImage.Visibility=Visibility.Hidden;
-      this.StatusLabel.Text=string.Empty;
-    }
-
-    /// <summary>Code la chaîne du champ d'entrée et place le résultat dans le champ de sortie.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
-    private void OnEncodeButtonClick(object sender, RoutedEventArgs e) {
-      this.OutputTextBox.Text=EncoderManager.Encoders[this.InputComboBox.SelectedIndex].Encode(this.InputTextBox.Text);
-      e.Handled=true;
-    }
-
-    /// <summary>Change la langue de l'application et la redémarre.</summary>
-    /// <param name="sender">Objet source de l'événement.</param>
-    /// <param name="e">Objet contenant les données de l'événement.</param>
+    /**
+     * Changes the application language and restarts it.
+     * @method OnSelectedCultureChanged
+     * @param {System.Object} sender The source of the event.
+     * @param {System.Windows.DependencyPropertyChangedEventArgs} e The event data.
+     * @private
+     */
     private void OnSelectedCultureChanged(object sender, DependencyPropertyChangedEventArgs e) {
       var message=Messages.RestartProgramInfo.Split('|');
       TaskDialog.Show(null, message[1], message[0], null, MessageBoxButton.OK, MessageBoxImage.Information);
@@ -149,10 +192,13 @@ namespace Crypt.Windows {
       Application.Current.Restart();
     }
 
-    /// <summary>Définit le texte à afficher dans la barre d'état lorsque la souris passe au-dessus du contrôle spécifié.</summary>
-    /// <param name="control">Contrôle associé au texte spécifié.</param>
-    /// <param name="text">Texte à afficher dans la barre d'état.</param>
-    /// <exception cref="ArgumentNullException">Le contrôle spécifié est une référence null.</exception>
+    /**
+     * Sets the text to display in the status bar when the mouse hovers the specified control.
+     * @method SetStatusTip
+     * @param {System.Windows.Control} control The control associated to the specified text.
+     * @param {System.String} text The text to display in the status bar.
+     * @private
+     */
     private void SetStatusTip(Control control, string text) {
       if(control==null) throw new ArgumentNullException("control");
       control.MouseEnter+=this.OnControlMouseEnter;

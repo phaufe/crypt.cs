@@ -1,5 +1,7 @@
-// <summary>Implémentation de la classe <c>Crypt.Encoders.RandomAsciiEncoder</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+/**
+ * Implementation of the `Crypt.Encoders.RandomAsciiEncoder` class.
+ * @module encoders/RandomAsciiEncoder
+ */
 
 namespace Crypt.Encoders {
   using System;
@@ -9,32 +11,48 @@ namespace Crypt.Encoders {
 
   using Crypt.Encoders.Properties;
   
-  /// <summary>Représente la méthode de codage RandomASCII.</summary>
+  /**
+   * Represents the RandomASCII encoding method.
+   * @class Crypt.Encoders.RandomAsciiEncoder
+   * @extends Crypt.IStringEncoder
+   */
   public class RandomAsciiEncoder: IStringEncoder {
-  
-    /// <summary>Instance utilisée pour générer une séquence de nombres aléatoires.</summary>
-    private Random random=new Random();
     
-    /// <summary>Initialise une nouvelle instance de la classe <see cref="RandomAsciiEncoder" />.</summary>
-    public RandomAsciiEncoder() {
-      this.random=new Random();
-    }
+    public RandomAsciiEncoder() {}
+  
+    /**
+     * Instance used to generate a random number sequence.
+     * @property random
+     * @private
+     */
+    private Random random=new Random();
 
-    /// <summary>Obtient la description de ce codeur de chaîne.</summary>
-    /// <value>Description du codeur de chaîne.</value>
+    /**
+     * The encoder description.
+     * @property Description
+     * @type System.String
+     * @final
+     */
     public string Description {
       get { return Resources.RandomAsciiDescription; }
     }
 
-    /// <summary>Obtient le nom de ce codeur de chaîne.</summary>
-    /// <value>Nom du codeur de chaîne.</value>
+    /**
+     * The encoder name.
+     * @property Name
+     * @type System.String
+     * @final
+     */
     public string Name {
       get { return "RandomASCII"; }
     }
 
-    /// <summary>Code la chaîne spécifiée.</summary>
-    /// <param name="text">Chaîne à coder.</param>
-    /// <returns>Chaîne après codage.</returns>
+    /**
+     * Encodes the specified string.
+     * @method Encode
+     * @param {System.String} text The string to encode.
+     * @return {System.String} The encoded string.
+     */
     public string Encode(string text) {
       if(string.IsNullOrEmpty(text)) return text;
 

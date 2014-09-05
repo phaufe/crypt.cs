@@ -1,5 +1,7 @@
-// <summary>Implémentation de la classe <c>Crypt.Encoders.TripleDesEncoder</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+/**
+ * Implementation of the `Crypt.Encoders.TripleDesEncoder` class.
+ * @module encoders/TripleDesEncoder
+ */
 
 namespace Crypt.Encoders {
   using System;
@@ -9,27 +11,42 @@ namespace Crypt.Encoders {
 
   using Crypt.Encoders.Properties;
   
-  /// <summary>Représente la méthode de codage TripleDES.</summary>
+  /**
+   * Represents the TripleDES encoding method.
+   * @class Crypt.Encoders.TripleDesEncoder
+   * @constructor
+   * @extends Crypt.IStringEncoder
+   */
   public class TripleDesEncoder: IStringEncoder {
   
-    /// <summary>Initialise une nouvelle instance de la classe <see cref="TripleDesEncoder" />.</summary>
     public TripleDesEncoder() {}
 
-    /// <summary>Obtient la description de ce codeur de chaîne.</summary>
-    /// <value>Description du codeur de chaîne.</value>
+    /**
+     * The encoder description.
+     * @property Description
+     * @type System.String
+     * @final
+     */
     public string Description {
       get { return Resources.TripleDesDescription; }
     }
 
-    /// <summary>Obtient le nom de ce codeur de chaîne.</summary>
-    /// <value>Nom du codeur de chaîne.</value>
+    /**
+     * The encoder name.
+     * @property Name
+     * @type System.String
+     * @final
+     */
     public string Name {
       get { return "TripleDES"; }
     }
 
-    /// <summary>Code la chaîne spécifiée.</summary>
-    /// <param name="text">Chaîne à coder.</param>
-    /// <returns>Chaîne après codage.</returns>
+    /**
+     * Encodes the specified string.
+     * @method Encode
+     * @param {System.String} text The string to encode.
+     * @return {System.String} The encoded string.
+     */
     public string Encode(string text) {
       var bytes=Encoding.Default.GetBytes(text);
       return Convert.ToBase64String(TripleDES.Create().CreateEncryptor().TransformFinalBlock(bytes, 0, bytes.Length));

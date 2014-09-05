@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* global cd, config, echo, exec, target */
+/* global cd, config, cp, echo, exec, target */
 
 /**
  * Build system.
@@ -41,7 +41,8 @@ target.all=function() {
  */
 target.doc=function() {
   echo('Build the documentation...');
-  exec('yuidoc-bs --extension ".cs" --no-color --theme cosmo');
+  exec('yuidoc-bs --extension ".cs" --theme cosmo');
+  cp('-f', [ 'doc/apple-touch-icon.png', 'doc/favicon.ico' ], 'doc/api/assets');
 };
 
 /**
@@ -55,7 +56,7 @@ target.lint=function() {
   exec('jshint --verbose bin');
 
   echo('Static analysis of documentation comments...');
-  exec('yuidoc-bs --extension ".cs" --lint --no-color');
+  exec('yuidoc-bs --extension ".cs" --lint');
 
   config.fatal=true;
 };

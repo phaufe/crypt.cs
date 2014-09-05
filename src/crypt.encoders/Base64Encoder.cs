@@ -1,5 +1,7 @@
-﻿// <summary>Implémentation de la classe <c>Crypt.Encoders.Base64Encoder</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+﻿/**
+ * Implementation of the `Crypt.Encoders.Base64Encoder` class.
+ * @module encoders/Base64Encoder
+ */
 
 namespace Crypt.Encoders {
   using System;
@@ -8,27 +10,42 @@ namespace Crypt.Encoders {
 
   using Crypt.Encoders.Properties;
   
-  /// <summary>Représente la méthode de codage Base64.</summary>
+  /**
+   * Represents the Base64 encoding method.
+   * @class Crypt.Encoders.Base64Encoder
+   * @constructor
+   * @extends Crypt.IStringEncoder
+   */
   public class Base64Encoder: IStringEncoder {
   
-    /// <summary>Initialise une nouvelle instance de la classe <see cref="Base64Encoder" />.</summary>
     public Base64Encoder() {}
 
-    /// <summary>Obtient la description de ce codeur de chaîne.</summary>
-    /// <value>Description du codeur de chaîne.</value>
+    /**
+     * The encoder description.
+     * @property Description
+     * @type System.String
+     * @final
+     */
     public string Description {
       get { return Resources.Base64Description; }
     }
 
-    /// <summary>Obtient le nom de ce codeur de chaîne.</summary>
-    /// <value>Nom du codeur de chaîne.</value>
+    /**
+     * The encoder name.
+     * @property Name
+     * @type System.String
+     * @final
+     */
     public string Name {
       get { return "Base64"; }
     }
 
-    /// <summary>Code la chaîne spécifiée.</summary>
-    /// <param name="text">Chaîne à coder.</param>
-    /// <returns>Chaîne après codage.</returns>
+    /**
+     * Encodes the specified string.
+     * @method Encode
+     * @param {System.String} text The string to encode.
+     * @return {System.String} The encoded string.
+     */
     public string Encode(string text) {
       var bytes=Encoding.Default.GetBytes(text);
       return Convert.ToBase64String(bytes);

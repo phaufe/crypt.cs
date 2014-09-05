@@ -1,5 +1,7 @@
-﻿// <summary>Informations de version de l'assemblage <c>Crypt.Windows</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+﻿/**
+ * The properties of `Crypt.Windows` assembly.
+ * @module windows/properties/AssemblyInfo
+ */
 
 using System;
 using System.Reflection;
@@ -9,7 +11,7 @@ using System.Windows;
 
 [assembly: AssemblyTitle("Crypt.Windows")]
 [assembly: AssemblyDescription("String Encoding Tool")]
-[assembly: AssemblyVersion("0.4.0.2013")]
+[assembly: AssemblyVersion("0.4.0.2014")]
 
 [assembly: AssemblyProduct("Crypt.cs")]
 [assembly: AssemblyCompany("Cédric Belin")]

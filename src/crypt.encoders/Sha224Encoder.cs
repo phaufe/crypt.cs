@@ -1,5 +1,7 @@
-// <summary>Implémentation de la classe <c>Crypt.Encoders.Sha224Encoder</c>.</summary>
-// <author>Cédric Belin &lt;cedric@belin.io&gt;</author>
+/**
+ * Implementation of the `Crypt.Encoders.Sha224Encoder` class.
+ * @module encoders/Sha224Encoder
+ */
 
 namespace Crypt.Encoders {
   using System;
@@ -10,27 +12,42 @@ namespace Crypt.Encoders {
   using MiniFramework.Text;
   using Mono.Security.Cryptography;
   
-  /// <summary>Représente la méthode de codage SHA-224.</summary>
+  /**
+   * Represents the SHA-224 encoding method.
+   * @class Crypt.Encoders.Sha224Encoder
+   * @constructor
+   * @extends Crypt.IStringEncoder
+   */
   public class Sha224Encoder: IStringEncoder {
   
-    /// <summary>Initialise une nouvelle instance de la classe <see cref="Sha224Encoder" />.</summary>
     public Sha224Encoder() {}
 
-    /// <summary>Obtient la description de ce codeur de chaîne.</summary>
-    /// <value>Description du codeur de chaîne.</value>
+    /**
+     * The encoder description.
+     * @property Description
+     * @type System.String
+     * @final
+     */
     public string Description {
       get { return Resources.Sha224Description; }
     }
 
-    /// <summary>Obtient le nom de ce codeur de chaîne.</summary>
-    /// <value>Nom du codeur de chaîne.</value>
+    /**
+     * The encoder name.
+     * @property Name
+     * @type System.String
+     * @final
+     */
     public string Name {
       get { return "SHA-224"; }
     }
 
-    /// <summary>Code la chaîne spécifiée.</summary>
-    /// <param name="text">Chaîne à coder.</param>
-    /// <returns>Chaîne après codage.</returns>
+    /**
+     * Encodes the specified string.
+     * @method Encode
+     * @param {System.String} text The string to encode.
+     * @return {System.String} The encoded string.
+     */
     public string Encode(string text) {
       var buffer=Encoding.Default.GetBytes(text);
       var hash=SHA224.Create().ComputeHash(buffer);
