@@ -3,13 +3,14 @@
 .gitattributes text
 .gitignore text
 
+*.cmd text
 *.config text
 *.cs text diff=csharp
 *.csproj text
 *.css text
-*.htm text diff=html
 *.html text diff=html
 *.js text
+*.json text
 *.md text
 *.resx text
 *.settings text
@@ -20,4 +21,5 @@
 *.dll binary
 *.gif binary
 *.ico binary
+*.jpg binary
 *.png binary
