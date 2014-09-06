@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Console.Program` class.
- * @module console/Program
+ * @module console.Program
  */
 
 namespace Crypt.Console {

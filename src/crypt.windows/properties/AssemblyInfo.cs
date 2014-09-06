@@ -1,6 +1,6 @@
 ﻿/**
  * The properties of `Crypt.Windows` assembly.
- * @module windows/properties/AssemblyInfo
+ * @module windows.properties.AssemblyInfo
  */
 
 using System;

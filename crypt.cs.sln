@@ -23,6 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{269A3AF3-ACF
 		bin\make.js = bin\make.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{C5A748D9-9973-40D3-BE09-7F6A8AEBF8D6}"
+	ProjectSection(SolutionItems) = preProject
+		AUTHORS.txt = AUTHORS.txt
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

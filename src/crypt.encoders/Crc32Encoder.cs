@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.Crc32Encoder` class.
- * @module encoders/Crc32Encoder
+ * @module encoders.Crc32Encoder
  */
 
 namespace Crypt.Encoders {

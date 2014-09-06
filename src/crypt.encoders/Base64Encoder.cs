@@ -1,6 +1,6 @@
 ﻿/**
  * Implementation of the `Crypt.Encoders.Base64Encoder` class.
- * @module encoders/Base64Encoder
+ * @module encoders.Base64Encoder
  */
 
 namespace Crypt.Encoders {

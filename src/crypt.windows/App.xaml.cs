@@ -1,6 +1,6 @@
 ﻿/**
  * Implementation of the `Crypt.Windows.App` class.
- * @module windows/App
+ * @module windows.App
  */
 
 namespace Crypt.Windows {

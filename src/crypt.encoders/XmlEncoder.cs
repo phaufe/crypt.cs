@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.XmlEncoder` class.
- * @module encoders/XmlEncoder
+ * @module encoders.XmlEncoder
  */
 
 namespace Crypt.Encoders {

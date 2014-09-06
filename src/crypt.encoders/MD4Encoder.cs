@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.MD4Encoder` class.
- * @module encoders/MD4Encoder
+ * @module encoders.MD4Encoder
  */
 
 namespace Crypt.Encoders {

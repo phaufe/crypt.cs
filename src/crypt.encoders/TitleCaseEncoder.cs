@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.TitleCaseEncoder` class.
- * @module encoders/TitleCaseEncoder
+ * @module encoders.TitleCaseEncoder
  */
 
 namespace Crypt.Encoders {

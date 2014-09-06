@@ -1,6 +1,6 @@
 ﻿/**
  * Implementation of the `DigiWar.Security.Cryptography.UnixCrypt` class.
- * @module encoders/internal/UnixCrypt
+ * @module encoders.internal.UnixCrypt
  */
 
 namespace DigiWar.Security.Cryptography {

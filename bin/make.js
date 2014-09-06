@@ -3,7 +3,7 @@
 
 /**
  * Build system.
- * @module bin/make
+ * @module bin.make
  */
 'use strict';
 

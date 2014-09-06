@@ -1,6 +1,6 @@
 ﻿/**
  * Implementation of the `Crypt.Windows.MainWindow` class.
- * @module windows/MainWindow
+ * @module windows.MainWindow
  */
 
 namespace Crypt.Windows {

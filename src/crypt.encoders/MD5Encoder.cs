@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.MD5Encoder` class.
- * @module encoders/MD5Encoder
+ * @module encoders.MD5Encoder
  */
 
 namespace Crypt.Encoders {

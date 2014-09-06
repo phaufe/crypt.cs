@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.RandomAsciiEncoder` class.
- * @module encoders/RandomAsciiEncoder
+ * @module encoders.RandomAsciiEncoder
  */
 
 namespace Crypt.Encoders {

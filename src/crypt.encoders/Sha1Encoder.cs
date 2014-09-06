@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.Sha1Encoder` class.
- * @module encoders/Sha1Encoder
+ * @module encoders.Sha1Encoder
  */
 
 namespace Crypt.Encoders {

@@ -1,6 +1,6 @@
 ﻿/**
  * The properties of `Crypt.Core` assembly.
- * @module core/properties/AssemblyInfo
+ * @module core.properties.AssemblyInfo
  */
 
 using System;

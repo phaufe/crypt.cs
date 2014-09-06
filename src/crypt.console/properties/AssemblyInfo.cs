@@ -1,6 +1,6 @@
 ﻿/**
  * The properties of `Crypt.Console` assembly.
- * @module console/properties/AssemblyInfo
+ * @module console.properties.AssemblyInfo
  */
 
 using System;

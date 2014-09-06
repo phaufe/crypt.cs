@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.HtmlEncoder` class.
- * @module encoders/HtmlEncoder
+ * @module encoders.HtmlEncoder
  */
 
 namespace Crypt.Encoders {

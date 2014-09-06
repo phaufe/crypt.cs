@@ -1,6 +1,6 @@
 ﻿/**
  * Implementation of the `Crypt.IStringEncoder` interface.
- * @module core/IStringEncoder
+ * @module core.IStringEncoder
  */
 
 namespace Crypt {

@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.TripleDesEncoder` class.
- * @module encoders/TripleDesEncoder
+ * @module encoders.TripleDesEncoder
  */
 
 namespace Crypt.Encoders {

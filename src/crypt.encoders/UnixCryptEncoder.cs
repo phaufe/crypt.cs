@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.UnixCryptEncoder` class.
- * @module encoders/UnixCryptEncoder
+ * @module encoders.UnixCryptEncoder
  */
 
 namespace Crypt.Encoders {

@@ -1,6 +1,6 @@
 ﻿/**
  * The properties of `Crypt.Encoders` assembly.
- * @module encoders/properties/AssemblyInfo
+ * @module encoders.properties.AssemblyInfo
  */
 
 using System;

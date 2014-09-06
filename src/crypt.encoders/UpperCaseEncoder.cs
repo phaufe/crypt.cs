@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.UpperCaseEncoder` class.
- * @module encoders/UpperCaseEncoder
+ * @module encoders.UpperCaseEncoder
  */
 
 namespace Crypt.Encoders {

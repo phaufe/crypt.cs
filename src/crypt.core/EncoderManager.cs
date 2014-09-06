@@ -1,6 +1,6 @@
 ﻿/**
  * Implementation of the `Crypt.EncoderManager` class.
- * @module core/EncoderManager
+ * @module core.EncoderManager
  */
 
 namespace Crypt {

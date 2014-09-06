@@ -1,6 +1,6 @@
 /**
  * Implementation of the `Crypt.Encoders.Sha384Encoder` class.
- * @module encoders/Sha384Encoder
+ * @module encoders.Sha384Encoder
  */
 
 namespace Crypt.Encoders {
