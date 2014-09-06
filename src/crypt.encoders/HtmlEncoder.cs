@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the HTML encoding method.
    * @class Crypt.Encoders.HtmlEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class HtmlEncoder: IStringEncoder {
   

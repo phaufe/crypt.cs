@@ -15,7 +15,7 @@ namespace Crypt.Encoders {
    * Represents the CRC32 encoding method.
    * @class Crypt.Encoders.Crc32Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class Crc32Encoder: IStringEncoder {
   

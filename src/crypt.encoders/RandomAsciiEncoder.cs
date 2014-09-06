@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
   /**
    * Represents the RandomASCII encoding method.
    * @class Crypt.Encoders.RandomAsciiEncoder
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class RandomAsciiEncoder: IStringEncoder {
     

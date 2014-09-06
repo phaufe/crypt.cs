@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the SHA-384 encoding method.
    * @class Crypt.Encoders.Sha384Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class Sha384Encoder: IStringEncoder {
   

@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the TitleCase encoding method.
    * @class Crypt.Encoders.TitleCaseEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class TitleCaseEncoder: IStringEncoder {
   

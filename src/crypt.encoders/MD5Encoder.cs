@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the MD5 encoding method.
    * @class Crypt.Encoders.MD5Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class MD5Encoder: IStringEncoder {
   

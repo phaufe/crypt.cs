@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the XML encoding method.
    * @class Crypt.Encoders.XmlEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class XmlEncoder: IStringEncoder {
   

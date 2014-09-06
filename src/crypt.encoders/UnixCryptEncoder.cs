@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the UNIXCrypt encoding method.
    * @class Crypt.Encoders.UnixCryptEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class UnixCryptEncoder: IStringEncoder {
   

@@ -16,7 +16,7 @@ namespace Crypt.Encoders {
    * Represents the MD4 encoding method.
    * @class Crypt.Encoders.MD4Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class MD4Encoder: IStringEncoder {
   

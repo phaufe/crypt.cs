@@ -15,7 +15,7 @@ namespace Crypt.Encoders {
    * Represents the DES encoding method.
    * @class Crypt.Encoders.DesEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class DesEncoder: IStringEncoder {
   

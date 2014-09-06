@@ -13,7 +13,7 @@ namespace Crypt.Encoders {
    * Represents the UpperCase encoding method.
    * @class Crypt.Encoders.UpperCaseEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class UpperCaseEncoder: IStringEncoder {
   

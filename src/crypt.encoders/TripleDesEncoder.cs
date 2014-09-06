@@ -15,7 +15,7 @@ namespace Crypt.Encoders {
    * Represents the TripleDES encoding method.
    * @class Crypt.Encoders.TripleDesEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class TripleDesEncoder: IStringEncoder {
   

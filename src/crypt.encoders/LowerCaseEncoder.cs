@@ -13,7 +13,7 @@ namespace Crypt.Encoders {
    * Represents the LowerCase encoding method.
    * @class Crypt.Encoders.LowerCaseEncoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class LowerCaseEncoder: IStringEncoder {
   

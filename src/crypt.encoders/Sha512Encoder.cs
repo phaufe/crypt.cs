@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the SHA-512 encoding method.
    * @class Crypt.Encoders.Sha512Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class Sha512Encoder: IStringEncoder {
   

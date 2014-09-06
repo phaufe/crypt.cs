@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the SHA-1 encoding method.
    * @class Crypt.Encoders.Sha1Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class Sha1Encoder: IStringEncoder {
   

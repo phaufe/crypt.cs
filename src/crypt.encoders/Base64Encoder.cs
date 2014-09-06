@@ -14,7 +14,7 @@ namespace Crypt.Encoders {
    * Represents the Base64 encoding method.
    * @class Crypt.Encoders.Base64Encoder
    * @constructor
-   * @extends Crypt.IStringEncoder
+   * @uses Crypt.IStringEncoder
    */
   public class Base64Encoder: IStringEncoder {
   
