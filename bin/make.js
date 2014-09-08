@@ -42,7 +42,7 @@ target.all=function() {
 target.doc=function() {
   echo('Build the documentation...');
   exec('yuidoc-bs --extension ".cs" --theme cosmo');
-  cp('-f', [ 'doc/apple-touch-icon.png', 'doc/favicon.ico' ], 'doc/api/assets');
+  cp('-f', [ 'www/apple-touch-icon.png', 'www/favicon.ico' ], 'doc/api/assets');
 };
 
 /**
