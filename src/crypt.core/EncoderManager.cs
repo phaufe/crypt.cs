@@ -29,15 +29,12 @@ namespace Crypt {
         if(encoders==null) {
           var list=new SortedList<string, IStringEncoder>();
 
-          // Détermination de l'emplacement des greffons
           var startupPath=Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
           var addinsPath=Path.Combine(startupPath, "addins");
 
-          // Recherche des greffons
           if(Directory.Exists(addinsPath)) {
             foreach(var file in Directory.GetFiles(addinsPath, "*.dll")) {
               try {
-                // Instanciation des greffons
                 var query=
                   from type in Assembly.LoadFrom(file).GetTypes()
                   where type.IsVisible
