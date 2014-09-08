@@ -20,7 +20,7 @@ namespace Crypt {
     /**
      * The list of all available string encoders.
      * @property Encoders
-     * @type System.Collections.Generic.IList<Crypt.IStringEncoder>
+     * @type System.Collections.Generic.IList&lt;Crypt.IStringEncoder&gt;
      * @static
      */
     private static IList<IStringEncoder> encoders;
