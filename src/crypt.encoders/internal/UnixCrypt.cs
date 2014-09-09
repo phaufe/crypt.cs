@@ -445,6 +445,8 @@ namespace DigiWar.Security.Cryptography {
      * @param {System.Byte[]} inputBytes The bytes to use for the conversion.
      * @param {System.UInt32} offset The offset at which to start in the `inputBytes` buffer.
      * @return {System.UInt32} The resulting unisgned integer.
+     * @static
+     * @private
      */
     private static uint FourBytesToInt(byte[] inputBytes, uint offset) {
       // I used an int here because the compiler would complain the stuff below would require a cast from int to uint.
