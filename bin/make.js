@@ -36,6 +36,17 @@ target.all=function() {
 };
 
 /**
+ * Deletes all generated files and reset any saved state.
+ * @method clean
+ */
+target.clean=function() {
+  echo('Delete the output files...');
+  rm('-rf', 'bin/debug');
+  rm('-rf', 'bin/release');
+  rm('-rf', 'src/*/obj');
+};
+
+/**
  * Builds the documentation.
  * @method doc
  */
