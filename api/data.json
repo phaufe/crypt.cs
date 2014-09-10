@@ -1,0 +1,2777 @@
+{
+    "project": {
+        "logo": "http://dev.belin.io/crypt.cs/favicon.ico",
+        "name": "Crypt.cs",
+        "url": "https://github.com/cedx/crypt.cs",
+        "description": "Simple string encoder (Base64, CRC32, DES, MD, SHA...).",
+        "version": "0.4.0"
+    },
+    "files": {
+        "src\\crypt.console\\properties\\AssemblyInfo.cs": {
+            "name": "src\\crypt.console\\properties\\AssemblyInfo.cs",
+            "modules": {
+                "console.properties.AssemblyInfo": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.console\\Program.cs": {
+            "name": "src\\crypt.console\\Program.cs",
+            "modules": {
+                "console.Program": 1
+            },
+            "classes": {
+                "Crypt.Console.Program": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.core\\properties\\AssemblyInfo.cs": {
+            "name": "src\\crypt.core\\properties\\AssemblyInfo.cs",
+            "modules": {
+                "core.properties.AssemblyInfo": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.core\\EncoderManager.cs": {
+            "name": "src\\crypt.core\\EncoderManager.cs",
+            "modules": {
+                "core.EncoderManager": 1
+            },
+            "classes": {
+                "Crypt.EncoderManager": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.core\\IStringEncoder.cs": {
+            "name": "src\\crypt.core\\IStringEncoder.cs",
+            "modules": {
+                "core.IStringEncoder": 1
+            },
+            "classes": {
+                "Crypt.IStringEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\internal\\UnixCrypt.cs": {
+            "name": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "modules": {
+                "encoders.internal.UnixCrypt": 1
+            },
+            "classes": {
+                "DigiWar.Security.Cryptography.UnixCrypt": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\properties\\AssemblyInfo.cs": {
+            "name": "src\\crypt.encoders\\properties\\AssemblyInfo.cs",
+            "modules": {
+                "encoders.properties.AssemblyInfo": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Base64Encoder.cs": {
+            "name": "src\\crypt.encoders\\Base64Encoder.cs",
+            "modules": {
+                "encoders.Base64Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Base64Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Crc32Encoder.cs": {
+            "name": "src\\crypt.encoders\\Crc32Encoder.cs",
+            "modules": {
+                "encoders.Crc32Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Crc32Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\DesEncoder.cs": {
+            "name": "src\\crypt.encoders\\DesEncoder.cs",
+            "modules": {
+                "encoders.DesEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.DesEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\HtmlEncoder.cs": {
+            "name": "src\\crypt.encoders\\HtmlEncoder.cs",
+            "modules": {
+                "encoders.HtmlEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.HtmlEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\LowerCaseEncoder.cs": {
+            "name": "src\\crypt.encoders\\LowerCaseEncoder.cs",
+            "modules": {
+                "encoders.LowerCaseEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.LowerCaseEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\MD2Encoder.cs": {
+            "name": "src\\crypt.encoders\\MD2Encoder.cs",
+            "modules": {
+                "encoders.MD2Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.MD2Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\MD4Encoder.cs": {
+            "name": "src\\crypt.encoders\\MD4Encoder.cs",
+            "modules": {
+                "encoders.MD4Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.MD4Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\MD5Encoder.cs": {
+            "name": "src\\crypt.encoders\\MD5Encoder.cs",
+            "modules": {
+                "encoders.MD5Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.MD5Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\RandomAsciiEncoder.cs": {
+            "name": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "modules": {
+                "encoders.RandomAsciiEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.RandomAsciiEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Sha1Encoder.cs": {
+            "name": "src\\crypt.encoders\\Sha1Encoder.cs",
+            "modules": {
+                "encoders.Sha1Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Sha1Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Sha224Encoder.cs": {
+            "name": "src\\crypt.encoders\\Sha224Encoder.cs",
+            "modules": {
+                "encoders.Sha224Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Sha224Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Sha256Encoder.cs": {
+            "name": "src\\crypt.encoders\\Sha256Encoder.cs",
+            "modules": {
+                "encoders.Sha256Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Sha256Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Sha384Encoder.cs": {
+            "name": "src\\crypt.encoders\\Sha384Encoder.cs",
+            "modules": {
+                "encoders.Sha384Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Sha384Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\Sha512Encoder.cs": {
+            "name": "src\\crypt.encoders\\Sha512Encoder.cs",
+            "modules": {
+                "encoders.Sha512Encoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.Sha512Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\TitleCaseEncoder.cs": {
+            "name": "src\\crypt.encoders\\TitleCaseEncoder.cs",
+            "modules": {
+                "encoders.TitleCaseEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.TitleCaseEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\TripleDesEncoder.cs": {
+            "name": "src\\crypt.encoders\\TripleDesEncoder.cs",
+            "modules": {
+                "encoders.TripleDesEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.TripleDesEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\UnixCryptEncoder.cs": {
+            "name": "src\\crypt.encoders\\UnixCryptEncoder.cs",
+            "modules": {
+                "encoders.UnixCryptEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.UnixCryptEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\UpperCaseEncoder.cs": {
+            "name": "src\\crypt.encoders\\UpperCaseEncoder.cs",
+            "modules": {
+                "encoders.UpperCaseEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.UpperCaseEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.encoders\\XmlEncoder.cs": {
+            "name": "src\\crypt.encoders\\XmlEncoder.cs",
+            "modules": {
+                "encoders.XmlEncoder": 1
+            },
+            "classes": {
+                "Crypt.Encoders.XmlEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.windows\\properties\\AssemblyInfo.cs": {
+            "name": "src\\crypt.windows\\properties\\AssemblyInfo.cs",
+            "modules": {
+                "windows.properties.AssemblyInfo": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.windows\\App.xaml.cs": {
+            "name": "src\\crypt.windows\\App.xaml.cs",
+            "modules": {
+                "windows.App": 1
+            },
+            "classes": {
+                "Crypt.Windows.App": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\crypt.windows\\MainWindow.xaml.cs": {
+            "name": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "modules": {
+                "windows.MainWindow": 1
+            },
+            "classes": {
+                "Crypt.Windows.MainWindow": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "console.properties.AssemblyInfo": {
+            "name": "console.properties.AssemblyInfo",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.console\\properties\\AssemblyInfo.cs",
+            "line": 1,
+            "description": "The properties of `Crypt.Console` assembly."
+        },
+        "console.Program": {
+            "name": "console.Program",
+            "submodules": {},
+            "classes": {
+                "Crypt.Console.Program": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 16,
+            "description": "Implementation of the `Crypt.Console.Program` class."
+        },
+        "core.properties.AssemblyInfo": {
+            "name": "core.properties.AssemblyInfo",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.core\\properties\\AssemblyInfo.cs",
+            "line": 1,
+            "description": "The properties of `Crypt.Core` assembly."
+        },
+        "core.EncoderManager": {
+            "name": "core.EncoderManager",
+            "submodules": {},
+            "classes": {
+                "Crypt.EncoderManager": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.core\\EncoderManager.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.EncoderManager` class."
+        },
+        "core.IStringEncoder": {
+            "name": "core.IStringEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.IStringEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.core\\IStringEncoder.cs",
+            "line": 10,
+            "description": "Implementation of the `Crypt.IStringEncoder` interface."
+        },
+        "encoders.internal.UnixCrypt": {
+            "name": "encoders.internal.UnixCrypt",
+            "submodules": {},
+            "classes": {
+                "DigiWar.Security.Cryptography.UnixCrypt": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 11,
+            "description": "Implementation of the `DigiWar.Security.Cryptography.UnixCrypt` class."
+        },
+        "encoders.properties.AssemblyInfo": {
+            "name": "encoders.properties.AssemblyInfo",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\properties\\AssemblyInfo.cs",
+            "line": 1,
+            "description": "The properties of `Crypt.Encoders` assembly."
+        },
+        "encoders.Base64Encoder": {
+            "name": "encoders.Base64Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Base64Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Base64Encoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.Base64Encoder` class."
+        },
+        "encoders.Crc32Encoder": {
+            "name": "encoders.Crc32Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Crc32Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Crc32Encoder.cs",
+            "line": 14,
+            "description": "Implementation of the `Crypt.Encoders.Crc32Encoder` class."
+        },
+        "encoders.DesEncoder": {
+            "name": "encoders.DesEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.DesEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\DesEncoder.cs",
+            "line": 14,
+            "description": "Implementation of the `Crypt.Encoders.DesEncoder` class."
+        },
+        "encoders.HtmlEncoder": {
+            "name": "encoders.HtmlEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.HtmlEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\HtmlEncoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.HtmlEncoder` class."
+        },
+        "encoders.LowerCaseEncoder": {
+            "name": "encoders.LowerCaseEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.LowerCaseEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\LowerCaseEncoder.cs",
+            "line": 12,
+            "description": "Implementation of the `Crypt.Encoders.LowerCaseEncoder` class."
+        },
+        "encoders.MD2Encoder": {
+            "name": "encoders.MD2Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.MD2Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\MD2Encoder.cs",
+            "line": 15,
+            "description": "Implementation of the `Crypt.Encoders.MD2Encoder` class."
+        },
+        "encoders.MD4Encoder": {
+            "name": "encoders.MD4Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.MD4Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\MD4Encoder.cs",
+            "line": 15,
+            "description": "Implementation of the `Crypt.Encoders.MD4Encoder` class."
+        },
+        "encoders.MD5Encoder": {
+            "name": "encoders.MD5Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.MD5Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\MD5Encoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.MD5Encoder` class."
+        },
+        "encoders.RandomAsciiEncoder": {
+            "name": "encoders.RandomAsciiEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.RandomAsciiEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "line": 14,
+            "description": "Implementation of the `Crypt.Encoders.RandomAsciiEncoder` class."
+        },
+        "encoders.Sha1Encoder": {
+            "name": "encoders.Sha1Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Sha1Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Sha1Encoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.Sha1Encoder` class."
+        },
+        "encoders.Sha224Encoder": {
+            "name": "encoders.Sha224Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Sha224Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Sha224Encoder.cs",
+            "line": 15,
+            "description": "Implementation of the `Crypt.Encoders.Sha224Encoder` class."
+        },
+        "encoders.Sha256Encoder": {
+            "name": "encoders.Sha256Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Sha256Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Sha256Encoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.Sha256Encoder` class."
+        },
+        "encoders.Sha384Encoder": {
+            "name": "encoders.Sha384Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Sha384Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Sha384Encoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.Sha384Encoder` class."
+        },
+        "encoders.Sha512Encoder": {
+            "name": "encoders.Sha512Encoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.Sha512Encoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\Sha512Encoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.Sha512Encoder` class."
+        },
+        "encoders.TitleCaseEncoder": {
+            "name": "encoders.TitleCaseEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.TitleCaseEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\TitleCaseEncoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.TitleCaseEncoder` class."
+        },
+        "encoders.TripleDesEncoder": {
+            "name": "encoders.TripleDesEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.TripleDesEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\TripleDesEncoder.cs",
+            "line": 14,
+            "description": "Implementation of the `Crypt.Encoders.TripleDesEncoder` class."
+        },
+        "encoders.UnixCryptEncoder": {
+            "name": "encoders.UnixCryptEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.UnixCryptEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\UnixCryptEncoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.UnixCryptEncoder` class."
+        },
+        "encoders.UpperCaseEncoder": {
+            "name": "encoders.UpperCaseEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.UpperCaseEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\UpperCaseEncoder.cs",
+            "line": 12,
+            "description": "Implementation of the `Crypt.Encoders.UpperCaseEncoder` class."
+        },
+        "encoders.XmlEncoder": {
+            "name": "encoders.XmlEncoder",
+            "submodules": {},
+            "classes": {
+                "Crypt.Encoders.XmlEncoder": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.encoders\\XmlEncoder.cs",
+            "line": 13,
+            "description": "Implementation of the `Crypt.Encoders.XmlEncoder` class."
+        },
+        "windows.properties.AssemblyInfo": {
+            "name": "windows.properties.AssemblyInfo",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.windows\\properties\\AssemblyInfo.cs",
+            "line": 1,
+            "description": "The properties of `Crypt.Windows` assembly."
+        },
+        "windows.App": {
+            "name": "windows.App",
+            "submodules": {},
+            "classes": {
+                "Crypt.Windows.App": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.windows\\App.xaml.cs",
+            "line": 20,
+            "description": "Implementation of the `Crypt.Windows.App` class."
+        },
+        "windows.MainWindow": {
+            "name": "windows.MainWindow",
+            "submodules": {},
+            "classes": {
+                "Crypt.Windows.MainWindow": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 25,
+            "description": "Implementation of the `Crypt.Windows.MainWindow` class."
+        }
+    },
+    "classes": {
+        "Crypt.Console.Program": {
+            "name": "Crypt.Console.Program",
+            "shortname": "Crypt.Console.Program",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "console.Program",
+            "namespace": "",
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 16,
+            "description": "Console application.",
+            "static": 1
+        },
+        "Crypt.EncoderManager": {
+            "name": "Crypt.EncoderManager",
+            "shortname": "Crypt.EncoderManager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "core.EncoderManager",
+            "namespace": "",
+            "file": "src\\crypt.core\\EncoderManager.cs",
+            "line": 13,
+            "description": "Facilitates access to the string encoders at run time.",
+            "static": 1
+        },
+        "Crypt.IStringEncoder": {
+            "name": "Crypt.IStringEncoder",
+            "shortname": "Crypt.IStringEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [
+                "Crypt.Encoders.Base64Encoder",
+                "Crypt.Encoders.Crc32Encoder",
+                "Crypt.Encoders.DesEncoder",
+                "Crypt.Encoders.HtmlEncoder",
+                "Crypt.Encoders.LowerCaseEncoder",
+                "Crypt.Encoders.MD2Encoder",
+                "Crypt.Encoders.MD4Encoder",
+                "Crypt.Encoders.MD5Encoder",
+                "Crypt.Encoders.RandomAsciiEncoder",
+                "Crypt.Encoders.Sha1Encoder",
+                "Crypt.Encoders.Sha224Encoder",
+                "Crypt.Encoders.Sha256Encoder",
+                "Crypt.Encoders.Sha384Encoder",
+                "Crypt.Encoders.Sha512Encoder",
+                "Crypt.Encoders.TitleCaseEncoder",
+                "Crypt.Encoders.TripleDesEncoder",
+                "Crypt.Encoders.UnixCryptEncoder",
+                "Crypt.Encoders.UpperCaseEncoder",
+                "Crypt.Encoders.XmlEncoder"
+            ],
+            "module": "core.IStringEncoder",
+            "namespace": "",
+            "file": "src\\crypt.core\\IStringEncoder.cs",
+            "line": 10,
+            "description": "Represents a string encoder.",
+            "static": 1
+        },
+        "DigiWar.Security.Cryptography.UnixCrypt": {
+            "name": "DigiWar.Security.Cryptography.UnixCrypt",
+            "shortname": "DigiWar.Security.Cryptography.UnixCrypt",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.internal.UnixCrypt",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 11,
+            "description": "Provides the Unix `crypt()` encryption algorithm.\n\nThis class is a port from Java source. I do not understand the underlying algorithms, I just converted it to C# and it works.\nBecause I do not understand the underlying algorithms I cannot give most of the variables useful names. I have no clue what their\nsignificance is. I tried to give the variable names as much meaning as possible, but the original source just called them `a`, `b`, `c`, etc...\n\nA very important thing to note is that all integers in this code are UNSIGNED integers! Do not change this, ever!!! It will seriously fuckup the working\nof this class. It uses major bitshifting and while Java gives you the >>> operator to signify a right bitshift without setting the MSB for\na signed integer, C# does not have this operator and will just set the new MSB for you if it happened to be set the moment you bitshifted it.\nThis is undesirable for most bitshifts and in the cases it did matter, I casted the variable back to an integer. This was only required where\na variable was on the right-side of a bitshift operator.",
+            "static": 1
+        },
+        "Crypt.Encoders.Base64Encoder": {
+            "name": "Crypt.Encoders.Base64Encoder",
+            "shortname": "Crypt.Encoders.Base64Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Base64Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Base64Encoder.cs",
+            "line": 13,
+            "description": "Represents the Base64 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.Crc32Encoder": {
+            "name": "Crypt.Encoders.Crc32Encoder",
+            "shortname": "Crypt.Encoders.Crc32Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Crc32Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Crc32Encoder.cs",
+            "line": 14,
+            "description": "Represents the CRC32 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.DesEncoder": {
+            "name": "Crypt.Encoders.DesEncoder",
+            "shortname": "Crypt.Encoders.DesEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.DesEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\DesEncoder.cs",
+            "line": 14,
+            "description": "Represents the DES encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.HtmlEncoder": {
+            "name": "Crypt.Encoders.HtmlEncoder",
+            "shortname": "Crypt.Encoders.HtmlEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.HtmlEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\HtmlEncoder.cs",
+            "line": 13,
+            "description": "Represents the HTML encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.LowerCaseEncoder": {
+            "name": "Crypt.Encoders.LowerCaseEncoder",
+            "shortname": "Crypt.Encoders.LowerCaseEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.LowerCaseEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\LowerCaseEncoder.cs",
+            "line": 12,
+            "description": "Represents the LowerCase encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.MD2Encoder": {
+            "name": "Crypt.Encoders.MD2Encoder",
+            "shortname": "Crypt.Encoders.MD2Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.MD2Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\MD2Encoder.cs",
+            "line": 15,
+            "description": "Represents the MD2 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.MD4Encoder": {
+            "name": "Crypt.Encoders.MD4Encoder",
+            "shortname": "Crypt.Encoders.MD4Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.MD4Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\MD4Encoder.cs",
+            "line": 15,
+            "description": "Represents the MD4 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.MD5Encoder": {
+            "name": "Crypt.Encoders.MD5Encoder",
+            "shortname": "Crypt.Encoders.MD5Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.MD5Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\MD5Encoder.cs",
+            "line": 13,
+            "description": "Represents the MD5 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.RandomAsciiEncoder": {
+            "name": "Crypt.Encoders.RandomAsciiEncoder",
+            "shortname": "Crypt.Encoders.RandomAsciiEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.RandomAsciiEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "line": 14,
+            "description": "Represents the RandomASCII encoding method.",
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.Sha1Encoder": {
+            "name": "Crypt.Encoders.Sha1Encoder",
+            "shortname": "Crypt.Encoders.Sha1Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Sha1Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Sha1Encoder.cs",
+            "line": 13,
+            "description": "Represents the SHA-1 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.Sha224Encoder": {
+            "name": "Crypt.Encoders.Sha224Encoder",
+            "shortname": "Crypt.Encoders.Sha224Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Sha224Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Sha224Encoder.cs",
+            "line": 15,
+            "description": "Represents the SHA-224 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.Sha256Encoder": {
+            "name": "Crypt.Encoders.Sha256Encoder",
+            "shortname": "Crypt.Encoders.Sha256Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Sha256Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Sha256Encoder.cs",
+            "line": 13,
+            "description": "Represents the SHA-256 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.Sha384Encoder": {
+            "name": "Crypt.Encoders.Sha384Encoder",
+            "shortname": "Crypt.Encoders.Sha384Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Sha384Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Sha384Encoder.cs",
+            "line": 13,
+            "description": "Represents the SHA-384 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.Sha512Encoder": {
+            "name": "Crypt.Encoders.Sha512Encoder",
+            "shortname": "Crypt.Encoders.Sha512Encoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.Sha512Encoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\Sha512Encoder.cs",
+            "line": 13,
+            "description": "Represents the SHA-512 encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.TitleCaseEncoder": {
+            "name": "Crypt.Encoders.TitleCaseEncoder",
+            "shortname": "Crypt.Encoders.TitleCaseEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.TitleCaseEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\TitleCaseEncoder.cs",
+            "line": 13,
+            "description": "Represents the TitleCase encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.TripleDesEncoder": {
+            "name": "Crypt.Encoders.TripleDesEncoder",
+            "shortname": "Crypt.Encoders.TripleDesEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.TripleDesEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\TripleDesEncoder.cs",
+            "line": 14,
+            "description": "Represents the TripleDES encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.UnixCryptEncoder": {
+            "name": "Crypt.Encoders.UnixCryptEncoder",
+            "shortname": "Crypt.Encoders.UnixCryptEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.UnixCryptEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\UnixCryptEncoder.cs",
+            "line": 13,
+            "description": "Represents the UNIXCrypt encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.UpperCaseEncoder": {
+            "name": "Crypt.Encoders.UpperCaseEncoder",
+            "shortname": "Crypt.Encoders.UpperCaseEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.UpperCaseEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\UpperCaseEncoder.cs",
+            "line": 12,
+            "description": "Represents the UpperCase encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Encoders.XmlEncoder": {
+            "name": "Crypt.Encoders.XmlEncoder",
+            "shortname": "Crypt.Encoders.XmlEncoder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "encoders.XmlEncoder",
+            "namespace": "",
+            "file": "src\\crypt.encoders\\XmlEncoder.cs",
+            "line": 13,
+            "description": "Represents the XML encoding method.",
+            "is_constructor": 1,
+            "uses": [
+                "Crypt.IStringEncoder"
+            ]
+        },
+        "Crypt.Windows.App": {
+            "name": "Crypt.Windows.App",
+            "shortname": "Crypt.Windows.App",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "windows.App",
+            "namespace": "",
+            "file": "src\\crypt.windows\\App.xaml.cs",
+            "line": 20,
+            "description": "WPF application.",
+            "extends": "System.Windows.Application",
+            "is_constructor": 1
+        },
+        "Crypt.Windows.MainWindow": {
+            "name": "Crypt.Windows.MainWindow",
+            "shortname": "Crypt.Windows.MainWindow",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "windows.MainWindow",
+            "namespace": "",
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 25,
+            "description": "Main window.",
+            "extends": "System.Windows.Window",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 23,
+            "description": "Informations about the application assembly.",
+            "itemtype": "property",
+            "name": "appInfo",
+            "type": "MiniFramework.Reflection.AssemblyInfo",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 32,
+            "description": "The command line options.",
+            "itemtype": "property",
+            "name": "options",
+            "type": "Mono.Options.OptionSet",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 41,
+            "description": "The application entry point.",
+            "itemtype": "method",
+            "name": "Main",
+            "params": [
+                {
+                    "name": "args",
+                    "description": "The command line arguments.",
+                    "type": "System.String[]"
+                }
+            ],
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 102,
+            "description": "Checks that all conditions are met for application startup.\nIf no string encoder can be found, a message is displayed to the user and the application terminated.",
+            "itemtype": "method",
+            "name": "CheckSetup",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 119,
+            "description": "Encodes and prints a given string using the specified encoding method.",
+            "itemtype": "method",
+            "name": "PrintEncodedString",
+            "params": [
+                {
+                    "name": "encodingMethod",
+                    "description": "The name of the encoding method to use.",
+                    "type": "System.String"
+                },
+                {
+                    "name": "stringToEncode",
+                    "description": "The string to be encoded.",
+                    "type": "System.String"
+                }
+            ],
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 142,
+            "description": "Prints the list of supported string encoders.",
+            "itemtype": "method",
+            "name": "PrintEncoderList",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 159,
+            "description": "Prints the detailed help.",
+            "itemtype": "method",
+            "name": "PrintHelp",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 171,
+            "description": "Prints the program usage.",
+            "itemtype": "method",
+            "name": "PrintUsage",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.console\\Program.cs",
+            "line": 186,
+            "description": "Prints informations about the program version.",
+            "itemtype": "method",
+            "name": "PrintVersion",
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Console.Program",
+            "module": "console.Program"
+        },
+        {
+            "file": "src\\crypt.core\\EncoderManager.cs",
+            "line": 20,
+            "description": "The list of all available string encoders.",
+            "itemtype": "property",
+            "name": "Encoders",
+            "type": "System.Collections.Generic.IList&lt;Crypt.IStringEncoder&gt;",
+            "static": 1,
+            "class": "Crypt.EncoderManager",
+            "module": "core.EncoderManager"
+        },
+        {
+            "file": "src\\crypt.core\\IStringEncoder.cs",
+            "line": 17,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.IStringEncoder",
+            "module": "core.IStringEncoder"
+        },
+        {
+            "file": "src\\crypt.core\\IStringEncoder.cs",
+            "line": 27,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.IStringEncoder",
+            "module": "core.IStringEncoder"
+        },
+        {
+            "file": "src\\crypt.core\\IStringEncoder.cs",
+            "line": 37,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.IStringEncoder",
+            "module": "core.IStringEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 29,
+            "description": "The list with characters allowed in a Unix encrypted password.\nIt is used to randomly chose two characters for use in the encryption.",
+            "itemtype": "property",
+            "name": "m_encryptionSaltCharacters",
+            "type": "System.String",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 40,
+            "description": "A lookup-table, presumably filled with some sort of encryption key. \nIt is used to calculate the index to the `m_SPTranslationTable` lookup-table.",
+            "itemtype": "property",
+            "name": "m_saltTranslation",
+            "type": "System.UInt32[]",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 68,
+            "description": "A lookup-table.\nIt is used to calculate the index to the `m_skb` lookup-table.",
+            "itemtype": "property",
+            "name": "m_shifts",
+            "type": "System.Boolean[]",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 82,
+            "description": "A lookup-table.\nIt is used the dynamically create the schedule lookup-table.",
+            "itemtype": "property",
+            "name": "m_skb",
+            "type": "System.UInt32[]",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 246,
+            "description": "A lookup-table.\nIt is used to calculate two integers that are used to encrypt the password.",
+            "itemtype": "property",
+            "name": "m_SPTranslationTable",
+            "type": "System.UInt32[]",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 410,
+            "description": "A lookup-table filled with printable characters.\nIt is used to make sure the encrypted password contains only printable characters. It is filled with\nASCII characters 46 - 122 (from the dot (`.`) until (including) the lowercase `'z'`).",
+            "itemtype": "property",
+            "name": "m_characterConversionTable",
+            "type": "System.UInt32[]",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 431,
+            "description": "Marks the size of the dynamically created schedule lookup-table.",
+            "itemtype": "property",
+            "name": "m_desIterations",
+            "type": "System.UInt32",
+            "static": 1,
+            "final": 1,
+            "access": "private",
+            "tagname": "",
+            "default": "16",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 442,
+            "description": "Converts four seperate bytes into one unsigned integer.",
+            "itemtype": "method",
+            "name": "FourBytesToInt",
+            "params": [
+                {
+                    "name": "inputBytes",
+                    "description": "The bytes to use for the conversion.",
+                    "type": "System.Byte[]"
+                },
+                {
+                    "name": "offset",
+                    "description": "The offset at which to start in the `inputBytes` buffer.",
+                    "type": "System.UInt32"
+                }
+            ],
+            "return": {
+                "description": "The resulting unisgned integer.",
+                "type": "System.UInt32"
+            },
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 464,
+            "description": "Converts an unsigned integer into 4 seperate bytes.",
+            "itemtype": "method",
+            "name": "IntToFourBytes",
+            "params": [
+                {
+                    "name": "inputInt",
+                    "description": "The unsigned integers to convert.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "outputBytes",
+                    "description": "The byte buffer into which to store the result.",
+                    "type": "System.Byte[]"
+                },
+                {
+                    "name": "offset",
+                    "description": "The offset to start storing at in the `outputBytes` buffer.",
+                    "type": "System.UInt32"
+                }
+            ],
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 480,
+            "description": "Performs some operation on 4 unsigned integers. It's labeled `PERM_OP` in the original source.",
+            "itemtype": "method",
+            "name": "PermOperation",
+            "params": [
+                {
+                    "name": "firstInt",
+                    "description": "The first unsigned integer to use.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "secondInt",
+                    "description": "The second unsigned integer to use.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "thirdInt",
+                    "description": "The third unsigned integer to use.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "fourthInt",
+                    "description": "The fourth unsigned integer to use.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "operationResults",
+                    "description": "An array of 2 unsigned integers that are the result of this operation.",
+                    "type": "System.UInt32[]"
+                }
+            ],
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 502,
+            "description": "Performs some operation on 3 integers. It's labeled `HPERM_OP` in the original source.",
+            "itemtype": "method",
+            "name": "HPermOperation",
+            "params": [
+                {
+                    "name": "firstInt",
+                    "description": "The first unsigned integer to use.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "secondInt",
+                    "description": "The second signed integer to use.",
+                    "type": "System.Int32"
+                },
+                {
+                    "name": "thirdInt",
+                    "description": "The third unsigned integer to use.",
+                    "type": "System.UInt32"
+                }
+            ],
+            "return": {
+                "description": "An integer that is the result of this operation.",
+                "type": "System.UInt32"
+            },
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 522,
+            "description": "This method does some very complex bit manipulations.",
+            "itemtype": "method",
+            "name": "SetDESKey",
+            "params": [
+                {
+                    "name": "encryptionKey",
+                    "description": "The input data to use for the bit manipulations.",
+                    "type": "System.Byte[]"
+                }
+            ],
+            "return": {
+                "description": "`m_desIterations * 2` number of unsigned integers that are the result of the manipulations.",
+                "type": "System.UInt32[]"
+            },
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 599,
+            "description": "This method does some bit manipulations.",
+            "itemtype": "method",
+            "name": "DEncrypt",
+            "params": [
+                {
+                    "name": "left",
+                    "description": "An input that is manipulated and then used for output.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "right",
+                    "description": "This is used for the bit manipulation.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "scheduleIndex",
+                    "description": "The index of an uint to use from the `schedule` array.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "firstSaltTranslator",
+                    "description": "The translated salt for the first salt character.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "secondSaltTranslator",
+                    "description": "The translated salt for the second salt character.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "schedule",
+                    "description": "The schedule arrray calculated before.",
+                    "type": "System.UInt32[]"
+                }
+            ],
+            "return": {
+                "description": "The result of these manipulations.",
+                "type": "System.UInt32"
+            },
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 635,
+            "description": "Calculates two unsigned integers that are used to encrypt the password.",
+            "itemtype": "method",
+            "name": "Body",
+            "params": [
+                {
+                    "name": "schedule",
+                    "description": "The schedule table calculated earlier.",
+                    "type": "System.UInt32[]"
+                },
+                {
+                    "name": "firstSaltTranslator",
+                    "description": "The first translated salt character.",
+                    "type": "System.UInt32"
+                },
+                {
+                    "name": "secondSaltTranslator",
+                    "description": "The second translated salt character.",
+                    "type": "System.UInt32"
+                }
+            ],
+            "return": {
+                "description": "2 unsigned integers in an array.",
+                "type": "System.UInt32[]"
+            },
+            "static": 1,
+            "access": "private",
+            "tagname": "",
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\internal\\UnixCrypt.cs",
+            "line": 697,
+            "description": "Encrypts the specified string using the Unix `crypt` algorithm.",
+            "itemtype": "method",
+            "name": "Crypt",
+            "params": [
+                {
+                    "name": "encryptionSalt",
+                    "description": "2 random printable characters that are used to randomize the encryption.",
+                    "type": "System.String",
+                    "optional": true
+                },
+                {
+                    "name": "textToEncrypt",
+                    "description": "The text that must be encrypted.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encrypted text.",
+                "type": "System.String"
+            },
+            "static": 1,
+            "class": "DigiWar.Security.Cryptography.UnixCrypt",
+            "module": "encoders.internal.UnixCrypt"
+        },
+        {
+            "file": "src\\crypt.encoders\\Base64Encoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Base64Encoder",
+            "module": "encoders.Base64Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Base64Encoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Base64Encoder",
+            "module": "encoders.Base64Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Base64Encoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Base64Encoder",
+            "module": "encoders.Base64Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Crc32Encoder.cs",
+            "line": 24,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Crc32Encoder",
+            "module": "encoders.Crc32Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Crc32Encoder.cs",
+            "line": 34,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Crc32Encoder",
+            "module": "encoders.Crc32Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Crc32Encoder.cs",
+            "line": 44,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Crc32Encoder",
+            "module": "encoders.Crc32Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\DesEncoder.cs",
+            "line": 24,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.DesEncoder",
+            "module": "encoders.DesEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\DesEncoder.cs",
+            "line": 34,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.DesEncoder",
+            "module": "encoders.DesEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\DesEncoder.cs",
+            "line": 44,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.DesEncoder",
+            "module": "encoders.DesEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\HtmlEncoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.HtmlEncoder",
+            "module": "encoders.HtmlEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\HtmlEncoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.HtmlEncoder",
+            "module": "encoders.HtmlEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\HtmlEncoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.HtmlEncoder",
+            "module": "encoders.HtmlEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\LowerCaseEncoder.cs",
+            "line": 22,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.LowerCaseEncoder",
+            "module": "encoders.LowerCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\LowerCaseEncoder.cs",
+            "line": 32,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.LowerCaseEncoder",
+            "module": "encoders.LowerCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\LowerCaseEncoder.cs",
+            "line": 42,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.LowerCaseEncoder",
+            "module": "encoders.LowerCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD2Encoder.cs",
+            "line": 25,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.MD2Encoder",
+            "module": "encoders.MD2Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD2Encoder.cs",
+            "line": 35,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.MD2Encoder",
+            "module": "encoders.MD2Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD2Encoder.cs",
+            "line": 45,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.MD2Encoder",
+            "module": "encoders.MD2Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD4Encoder.cs",
+            "line": 25,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.MD4Encoder",
+            "module": "encoders.MD4Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD4Encoder.cs",
+            "line": 35,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.MD4Encoder",
+            "module": "encoders.MD4Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD4Encoder.cs",
+            "line": 45,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.MD4Encoder",
+            "module": "encoders.MD4Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD5Encoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.MD5Encoder",
+            "module": "encoders.MD5Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD5Encoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.MD5Encoder",
+            "module": "encoders.MD5Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\MD5Encoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.MD5Encoder",
+            "module": "encoders.MD5Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "line": 23,
+            "description": "Instance used to generate a random number sequence.",
+            "itemtype": "property",
+            "name": "random",
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Encoders.RandomAsciiEncoder",
+            "module": "encoders.RandomAsciiEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "line": 30,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.RandomAsciiEncoder",
+            "module": "encoders.RandomAsciiEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "line": 40,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.RandomAsciiEncoder",
+            "module": "encoders.RandomAsciiEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\RandomAsciiEncoder.cs",
+            "line": 50,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.RandomAsciiEncoder",
+            "module": "encoders.RandomAsciiEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha1Encoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha1Encoder",
+            "module": "encoders.Sha1Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha1Encoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha1Encoder",
+            "module": "encoders.Sha1Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha1Encoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Sha1Encoder",
+            "module": "encoders.Sha1Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha224Encoder.cs",
+            "line": 25,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha224Encoder",
+            "module": "encoders.Sha224Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha224Encoder.cs",
+            "line": 35,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha224Encoder",
+            "module": "encoders.Sha224Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha224Encoder.cs",
+            "line": 45,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Sha224Encoder",
+            "module": "encoders.Sha224Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha256Encoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha256Encoder",
+            "module": "encoders.Sha256Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha256Encoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha256Encoder",
+            "module": "encoders.Sha256Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha256Encoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Sha256Encoder",
+            "module": "encoders.Sha256Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha384Encoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha384Encoder",
+            "module": "encoders.Sha384Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha384Encoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha384Encoder",
+            "module": "encoders.Sha384Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha384Encoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Sha384Encoder",
+            "module": "encoders.Sha384Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha512Encoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha512Encoder",
+            "module": "encoders.Sha512Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha512Encoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.Sha512Encoder",
+            "module": "encoders.Sha512Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\Sha512Encoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.Sha512Encoder",
+            "module": "encoders.Sha512Encoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\TitleCaseEncoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.TitleCaseEncoder",
+            "module": "encoders.TitleCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\TitleCaseEncoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.TitleCaseEncoder",
+            "module": "encoders.TitleCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\TitleCaseEncoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.TitleCaseEncoder",
+            "module": "encoders.TitleCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\TripleDesEncoder.cs",
+            "line": 24,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.TripleDesEncoder",
+            "module": "encoders.TripleDesEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\TripleDesEncoder.cs",
+            "line": 34,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.TripleDesEncoder",
+            "module": "encoders.TripleDesEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\TripleDesEncoder.cs",
+            "line": 44,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.TripleDesEncoder",
+            "module": "encoders.TripleDesEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\UnixCryptEncoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.UnixCryptEncoder",
+            "module": "encoders.UnixCryptEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\UnixCryptEncoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.UnixCryptEncoder",
+            "module": "encoders.UnixCryptEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\UnixCryptEncoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.UnixCryptEncoder",
+            "module": "encoders.UnixCryptEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\UpperCaseEncoder.cs",
+            "line": 22,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.UpperCaseEncoder",
+            "module": "encoders.UpperCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\UpperCaseEncoder.cs",
+            "line": 32,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.UpperCaseEncoder",
+            "module": "encoders.UpperCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\UpperCaseEncoder.cs",
+            "line": 42,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.UpperCaseEncoder",
+            "module": "encoders.UpperCaseEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\XmlEncoder.cs",
+            "line": 23,
+            "description": "The encoder description.",
+            "itemtype": "property",
+            "name": "Description",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.XmlEncoder",
+            "module": "encoders.XmlEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\XmlEncoder.cs",
+            "line": 33,
+            "description": "The encoder name.",
+            "itemtype": "property",
+            "name": "Name",
+            "type": "System.String",
+            "final": 1,
+            "class": "Crypt.Encoders.XmlEncoder",
+            "module": "encoders.XmlEncoder"
+        },
+        {
+            "file": "src\\crypt.encoders\\XmlEncoder.cs",
+            "line": 43,
+            "description": "Encodes the specified string.",
+            "itemtype": "method",
+            "name": "Encode",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "The string to encode.",
+                    "type": "System.String"
+                }
+            ],
+            "return": {
+                "description": "The encoded string.",
+                "type": "System.String"
+            },
+            "class": "Crypt.Encoders.XmlEncoder",
+            "module": "encoders.XmlEncoder"
+        },
+        {
+            "file": "src\\crypt.windows\\App.xaml.cs",
+            "line": 34,
+            "description": "Checks that all conditions are met for application startup.\nIf no string encoder can be found, a message is displayed to the user and the application terminated.",
+            "itemtype": "method",
+            "name": "CheckSetup",
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.App",
+            "module": "windows.App"
+        },
+        {
+            "file": "src\\crypt.windows\\App.xaml.cs",
+            "line": 48,
+            "description": "Saves the application settings on exit.",
+            "itemtype": "method",
+            "name": "OnApplicationExit",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.ExitEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.App",
+            "module": "windows.App"
+        },
+        {
+            "file": "src\\crypt.windows\\App.xaml.cs",
+            "line": 59,
+            "description": "Sets the application culture on startup.",
+            "itemtype": "method",
+            "name": "OnApplicationStartup",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.StartupEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.App",
+            "module": "windows.App"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 76,
+            "description": "The \"Show/Hide Control\" command.",
+            "itemtype": "property",
+            "name": "ShowHideCommand",
+            "type": "System.Windows.Input.RoutedUICommand",
+            "static": 1,
+            "final": 1,
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 85,
+            "description": "Shows the \"About\" box.",
+            "itemtype": "method",
+            "name": "OnAboutExecuted",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.Input.ExecutedRoutedEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 106,
+            "description": "Closes the window.",
+            "itemtype": "method",
+            "name": "OnCloseExecuted",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.Input.ExecutedRoutedEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 118,
+            "description": "Displays in the status bar the text associated to a control.",
+            "itemtype": "method",
+            "name": "OnControlMouseEnter",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.Input.MouseEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 129,
+            "description": "Resets the status bar.",
+            "itemtype": "method",
+            "name": "OnControlMouseLeave",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.Input.MouseEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 141,
+            "description": "Encodes the string from the input field and puts the results into the output field.",
+            "itemtype": "method",
+            "name": "OnEncodeButtonClick",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.RoutedEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 153,
+            "description": "Opens an URL in the default browser.",
+            "itemtype": "method",
+            "name": "OnOpenUrlExecuted",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.Input.ExecutedRoutedEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 165,
+            "description": "Shows or hides a control.",
+            "itemtype": "method",
+            "name": "OnShowHideExecuted",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.Input.ExecutedRoutedEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 180,
+            "description": "Changes the application language and restarts it.",
+            "itemtype": "method",
+            "name": "OnSelectedCultureChanged",
+            "params": [
+                {
+                    "name": "sender",
+                    "description": "The source of the event.",
+                    "type": "System.Object"
+                },
+                {
+                    "name": "e",
+                    "description": "The event data.",
+                    "type": "System.Windows.DependencyPropertyChangedEventArgs"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        },
+        {
+            "file": "src\\crypt.windows\\MainWindow.xaml.cs",
+            "line": 195,
+            "description": "Sets the text to display in the status bar when the mouse hovers the specified control.",
+            "itemtype": "method",
+            "name": "SetStatusTip",
+            "params": [
+                {
+                    "name": "control",
+                    "description": "The control associated to the specified text.",
+                    "type": "System.Windows.Control"
+                },
+                {
+                    "name": "text",
+                    "description": "The text to display in the status bar.",
+                    "type": "System.String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "Crypt.Windows.MainWindow",
+            "module": "windows.MainWindow"
+        }
+    ],
+    "warnings": []
+}
