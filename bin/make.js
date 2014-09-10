@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* global cd, config, cp, echo, exec, target */
+/* global cd, config, cp, echo, exec, rm, target */
 
 /**
  * Build system.
