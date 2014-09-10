@@ -43,7 +43,10 @@ target.clean=function() {
   echo('Delete the output files...');
   rm('-rf', 'bin/debug');
   rm('-rf', 'bin/release');
-  rm('-rf', 'src/*/obj');
+  rm('-rf', 'src/crypt.console/obj');
+  rm('-rf', 'src/crypt.core/obj');
+  rm('-rf', 'src/crypt.encoders/obj');
+  rm('-rf', 'src/crypt.windows/obj');
 };
 
 /**
