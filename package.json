@@ -38,10 +38,11 @@
     "name": "Crypt.cs",
     "url": "https://github.com/cedx/crypt.cs",
     "options": {
-      "linkNatives": false,
+      "extension": ".cs",
       "outdir": "doc/api",
       "paths": "src",
-      "tabtospace": 2
+      "tabtospace": 2,
+      "theme": "cosmo"
     }
   }
 }
