@@ -9,7 +9,7 @@
   "version": "0.4.0",
   "devDependencies": {
     "docgen-js": "^0.1.0",
-    "jshint": "^2.5.2",
+    "jshint": "^2.5.5",
     "shelljs": "^0.3.0"
   },
   "engines": {
