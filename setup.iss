@@ -19,15 +19,15 @@ ArchitecturesInstallIn64BitMode = x64
 Compression = lzma
 DefaultDirName = {pf}\Belin\{#AppName}
 DefaultGroupName = {#AppName}
-LicenseFile = .\LICENSE.txt
+LicenseFile = LICENSE.txt
 OutputBaseFilename = {#AppName} {#AppVersion}
-OutputDir = .\var
-SetupIconFile = .\src\crypt.windows\resources\app.ico
+OutputDir = var
+SetupIconFile = src\crypt.windows\resources\app.ico
 SolidCompression = yes
 UninstallDisplayIcon = {app}\{#AppExeName}
 VersionInfoVersion = 5.5.5
 WizardImageFile = compiler:WizModernImage-IS.bmp
-WizardSmallImageFile = .\setup.bmp
+WizardSmallImageFile = setup.bmp
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -38,7 +38,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 6.1
 
 [Files]
-Source: ".\var\release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "var\release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "%HOMEDRIVE%%HOMEPATH%"
