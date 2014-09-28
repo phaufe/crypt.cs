@@ -18,6 +18,7 @@ AppVersion = {#AppVersion}
 AllowNoIcons = yes
 ArchitecturesInstallIn64BitMode = x64
 Compression = lzma
+DefaultDialogFontName = Segoe UI
 DefaultDirName = {pf}\Belin\{#AppName}
 DefaultGroupName = {#AppName}
 LicenseFile = LICENSE.txt
