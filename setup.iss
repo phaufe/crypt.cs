@@ -1,4 +1,5 @@
-﻿#define AppExeName "crypt.windows.exe"
+﻿#define AppBase "crypt.windows"
+#define AppExeName AppBase+".exe"
 #define AppName "Crypt.cs"
 #define AppPublisher "Cédric Belin"
 #define AppURL "https://github.com/cedx/crypt.cs"
@@ -22,7 +23,7 @@ DefaultGroupName = {#AppName}
 LicenseFile = LICENSE.txt
 OutputBaseFilename = {#AppName} {#AppVersion}
 OutputDir = var
-SetupIconFile = src\crypt.windows\resources\app.ico
+SetupIconFile = src\{#AppBase}\resources\app.ico
 SolidCompression = yes
 UninstallDisplayIcon = {app}\{#AppExeName}
 VersionInfoVersion = 5.5.5
@@ -38,6 +39,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 6.1
 
 [Files]
+{#DeleteFileNow("var\release\"+AppBase+".vshost.exe")}
+{#DeleteFileNow("var\release\"+AppBase+".vshost.exe.config")}
+{#DeleteFileNow("var\release\"+AppBase+".vshost.exe.manifest")}
 Source: "var\release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]

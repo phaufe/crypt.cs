@@ -9,6 +9,7 @@
 
 // Module dependencies.
 require('shelljs/make');
+var util=require('util');
 
 /**
  * Provides tasks for [ShellJS](http://shelljs.org) make tool.
@@ -41,12 +42,16 @@ target.all=function() {
  */
 target.clean=function() {
   echo('Delete the output files...');
+
   rm('-rf', 'src/crypt.console/obj');
   rm('-rf', 'src/crypt.core/obj');
   rm('-rf', 'src/crypt.encoders/obj');
   rm('-rf', 'src/crypt.windows/obj');
   rm('-rf', 'var/debug');
   rm('-rf', 'var/release');
+
+  var pkg=require('../package.json');
+  rm('-f', util.format('var/%s %s.exe', pkg.yuidoc.name, pkg.version));
 };
 
 /**
