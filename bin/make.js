@@ -51,7 +51,7 @@ target.clean=function() {
   rm('-rf', 'var/release');
 
   var pkg=require('../package.json');
-  rm('-f', util.format('var/%s %s.exe', pkg.yuidoc.name, pkg.version));
+  rm('-f', util.format('var/%s-%s.exe', pkg.yuidoc.name.toLowerCase(), pkg.version));
 };
 
 /**
