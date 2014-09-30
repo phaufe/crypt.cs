@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* global cd, config, cp, echo, exec, rm, target */
+/* global cd, config, cp, echo, env, exec, rm, target, test */
 
 /**
  * Build system.
@@ -9,6 +9,7 @@
 
 // Module dependencies.
 require('shelljs/make');
+var path=require('path');
 var util=require('util');
 
 /**
@@ -52,6 +53,31 @@ target.clean=function() {
 
   var pkg=require('../package.json');
   rm('-f', util.format('var/%s-%s.exe', pkg.yuidoc.name.toLowerCase(), pkg.version));
+};
+
+/**
+ * Creates a distribution file for this program. 
+ * @method dist
+ */
+target.dist=function() {
+  echo('Build the redistributable...');
+
+  var builders=[
+    {
+      binary: 'MSBuild/12.0/Bin/MSBuild.exe',
+      command: '"%s" /maxcpucount /property:Configuration=Release'
+    },
+    {
+      binary: 'Inno Setup/ISCC.exe',
+      command: '"%s" setup.iss'
+    }
+  ];
+  
+  builders.forEach(function(builder) {
+    var executable=path.join(env.ProgramFiles, builder.binary);
+    if(!test('-f', executable) && ('ProgramFiles(x86)' in env)) executable=path.join(env['ProgramFiles(x86)'], builder.binary);
+    exec(util.format(builder.command, executable));
+  });
 };
 
 /**
