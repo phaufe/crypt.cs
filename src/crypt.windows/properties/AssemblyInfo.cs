@@ -11,7 +11,7 @@ using System.Windows;
 
 [assembly: AssemblyTitle("Crypt.Windows")]
 [assembly: AssemblyDescription("String Encoding Tool")]
-[assembly: AssemblyVersion("0.4.0.2014")]
+[assembly: AssemblyVersion("0.4.1.0")]
 
 [assembly: AssemblyProduct("Crypt.cs")]
 [assembly: AssemblyCompany("Cédric Belin")]
@@ -20,6 +20,6 @@ using System.Windows;
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 [assembly: ComVisible(false)]
-[assembly: Guid("396368ea-a9da-4fab-93ca-f8e844392c4c")]
+[assembly: Guid("CA46E55B-8587-4F14-81A5-699D4DED86EF")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]

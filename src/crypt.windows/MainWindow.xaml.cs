@@ -7,7 +7,9 @@ namespace Crypt.Windows {
   using System;
   using System.Collections.Generic;
   using System.Globalization;
+  using System.IO;
   using System.Linq;
+  using System.Reflection;
   using System.Windows;
   using System.Windows.Controls;
   using System.Windows.Controls.Primitives;
@@ -90,12 +92,19 @@ namespace Crypt.Windows {
      * @private
      */
     private void OnAboutExecuted(object sender, ExecutedRoutedEventArgs e) {
+      var startupPath=Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+      var license=new License {
+        Name="The MIT License",
+        Text=File.ReadAllText(Path.Combine(startupPath, "LICENSE.txt"))
+      };
+
       var window=new AboutBox() {
         Authors=Application.Current.Properties["Authors"].ToString(),
         Copyright=string.Format(CultureInfo.CurrentCulture, Messages.ApplicationCopyright, new AssemblyInfo(this.GetType().Assembly).Copyright),
         Description=Messages.ApplicationDescription,
         Logo=Properties.Resources.ApplicationIcon.ToBitmapImage(48),
-        License=(License) Application.Current.Properties["License"],
+        License=license,
         Owner=this,
         WebSite=Settings.Default.WebSite
       };

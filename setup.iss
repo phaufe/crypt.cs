@@ -3,7 +3,7 @@
 #define AppName "Crypt.cs"
 #define AppPublisher "Cédric Belin"
 #define AppURL "https://github.com/cedx/crypt.cs"
-#define AppVersion "0.4.0"
+#define AppVersion "0.4.1"
 
 [Setup]
 AppCopyright = Copyright (c) 2009-2014 {#AppPublisher}
@@ -57,6 +57,8 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 {#DeleteFileNow("var\release\"+AppBase+".windows.vshost.exe")}
 {#DeleteFileNow("var\release\"+AppBase+".windows.vshost.exe.config")}
 {#DeleteFileNow("var\release\"+AppBase+".windows.vshost.exe.manifest")}
+
+Source: "LICENSE.txt"; DestDir: "{app}"
 
 Source: "var\release\*.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "var\release\addins\*"; DestDir: "{app}\addins"; Flags: ignoreversion
