@@ -9,7 +9,10 @@
 
 // Module dependencies.
 require('shelljs/make');
+var archiver=require('archiver');
+var fs=require('fs');
 var path=require('path');
+var pkg=require('../package.json');
 var util=require('util');
 
 /**
@@ -25,6 +28,7 @@ cd(__dirname+'/..');
  * @type Object
  */
 config.fatal=true;
+config.output=util.format('var/%s-%s', pkg.yuidoc.name.toLowerCase(), pkg.version);
 
 /**
  * Runs the default tasks.
@@ -50,9 +54,8 @@ target.clean=function() {
   rm('-rf', 'src/crypt.windows/obj');
   rm('-rf', 'var/debug');
   rm('-rf', 'var/release');
-
-  var pkg=require('../package.json');
-  rm('-f', util.format('var/%s-%s.exe', pkg.yuidoc.name.toLowerCase(), pkg.version));
+  rm('-f', config.output+'.exe');
+  rm('-f', config.output+'.zip');
 };
 
 /**
@@ -78,6 +81,11 @@ target.dist=function() {
     if(!test('-f', executable) && ('ProgramFiles(x86)' in env)) executable=path.join(env['ProgramFiles(x86)'], builder.binary);
     exec(util.format(builder.command, executable));
   });
+
+  var archive=archiver('zip');
+  archive.on('entry', function(entry) { echo('Pack:', entry.name); });
+  archive.pipe(fs.createWriteStream(config.output+'.zip'));
+  archive.bulk({ cwd: 'var/release', expand: true, src: '**/*' }).finalize();
 };
 
 /**
