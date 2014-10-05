@@ -77,11 +77,11 @@ target.dist=function() {
   var builders=[
     {
       binary: 'MSBuild/12.0/Bin/MSBuild.exe',
-      command: '"%s" /maxcpucount /property:Configuration=Release'
+      command: '"%s" /maxcpucount /nologo /property:Configuration=Release /verbosity:minimal'
     },
     {
       binary: 'Inno Setup/ISCC.exe',
-      command: '"%s" setup.iss'
+      command: '"%s" /qp setup.iss'
     }
   ];
   
