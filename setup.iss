@@ -27,7 +27,7 @@ OutputDir = var
 SetupIconFile = src\{#AppBase}.windows\resources\app.ico
 SolidCompression = yes
 UninstallDisplayIcon = {app}\{#AppExeName}
-VersionInfoVersion = 5.5.5
+VersionInfoVersion = {#AppVersion}
 WizardImageFile = compiler:WizModernImage-IS.bmp
 WizardSmallImageFile = setup.bmp
 
