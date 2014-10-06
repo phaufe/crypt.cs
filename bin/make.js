@@ -10,7 +10,6 @@
 // Module dependencies.
 require('shelljs/make');
 var path=require('path');
-var pkg=require('../package.json');
 var util=require('util');
 
 /**
@@ -26,7 +25,6 @@ cd(__dirname+'/..');
  * @type Object
  */
 config.fatal=true;
-config.output=util.format('var/%s-%s', pkg.yuidoc.name.toLowerCase(), pkg.version);
 
 /**
  * Runs the default tasks.
@@ -61,8 +59,9 @@ target.clean=function() {
   rm('-rf', 'src/crypt.windows/obj');
   rm('-rf', 'var/debug');
   rm('-rf', 'var/release');
-  rm('-f', config.output+'.exe');
-  rm('-f', config.output+'.zip');
+  
+  var pkg=require('../package.json');
+  rm('-f', util.format('var/%s-%s.exe', pkg.yuidoc.name.toLowerCase(), pkg.version));
 };
 
 /**
