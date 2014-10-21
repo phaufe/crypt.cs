@@ -41,7 +41,7 @@ namespace Crypt.Console {
     /**
      * The application entry point.
      * @method Main
-     * @param {System.String[]} args The command line arguments.
+     * @param {System.Array&lt;System.String&gt;} args The command line arguments.
      * @static
      * @private
      */

@@ -41,7 +41,7 @@ namespace DigiWar.Security.Cryptography {
      * A lookup-table, presumably filled with some sort of encryption key. 
      * It is used to calculate the index to the `m_SPTranslationTable` lookup-table.
      * @property m_saltTranslation
-     * @type System.UInt32[]
+     * @type System.Array&lt;System.UInt32&gt;
      * @static
      * @final
      * @private
@@ -69,7 +69,7 @@ namespace DigiWar.Security.Cryptography {
      * A lookup-table.
      * It is used to calculate the index to the `m_skb` lookup-table.
      * @property m_shifts
-     * @type System.Boolean[]
+     * @type System.Array&lt;System.Boolean&gt;
      * @static
      * @final
      * @private
@@ -83,7 +83,7 @@ namespace DigiWar.Security.Cryptography {
      * A lookup-table.
      * It is used the dynamically create the schedule lookup-table.
      * @property m_skb
-     * @type System.UInt32[]
+     * @type System.Array&lt;System.UInt32&gt;
      * @static
      * @final
      * @private
@@ -247,7 +247,7 @@ namespace DigiWar.Security.Cryptography {
      * A lookup-table.
      * It is used to calculate two integers that are used to encrypt the password.
      * @property m_SPTranslationTable
-     * @type System.UInt32[]
+     * @type System.Array&lt;System.UInt32&gt;
      * @static
      * @final
      * @private
@@ -412,7 +412,7 @@ namespace DigiWar.Security.Cryptography {
      * It is used to make sure the encrypted password contains only printable characters. It is filled with
      * ASCII characters 46 - 122 (from the dot (`.`) until (including) the lowercase `'z'`).
      * @property m_characterConversionTable
-     * @type System.UInt32[]
+     * @type System.Array&lt;System.UInt32&gt;
      * @static
      * @final
      * @private
@@ -442,7 +442,7 @@ namespace DigiWar.Security.Cryptography {
     /**
      * Converts four seperate bytes into one unsigned integer.
      * @method FourBytesToInt
-     * @param {System.Byte[]} inputBytes The bytes to use for the conversion.
+     * @param {System.Array&lt;System.Byte&gt;} inputBytes The bytes to use for the conversion.
      * @param {System.UInt32} offset The offset at which to start in the `inputBytes` buffer.
      * @return {System.UInt32} The resulting unisgned integer.
      * @static
@@ -465,7 +465,7 @@ namespace DigiWar.Security.Cryptography {
      * Converts an unsigned integer into 4 seperate bytes.
      * @method IntToFourBytes
      * @param {System.UInt32} inputInt The unsigned integers to convert.
-     * @param {System.Byte[]} outputBytes The byte buffer into which to store the result.
+     * @param {System.Array&lt;System.Byte&gt;} outputBytes The byte buffer into which to store the result.
      * @param {System.UInt32} offset The offset to start storing at in the `outputBytes` buffer.
      * @static
      * @private
@@ -484,7 +484,7 @@ namespace DigiWar.Security.Cryptography {
      * @param {System.UInt32} secondInt The second unsigned integer to use.
      * @param {System.UInt32} thirdInt The third unsigned integer to use.
      * @param {System.UInt32} fourthInt The fourth unsigned integer to use.
-     * @param {System.UInt32[]} operationResults An array of 2 unsigned integers that are the result of this operation.
+     * @param {System.Array&lt;System.UInt32&gt;} operationResults An array of 2 unsigned integers that are the result of this operation.
      * @static
      * @private
      */
@@ -522,8 +522,8 @@ namespace DigiWar.Security.Cryptography {
     /**
      * This method does some very complex bit manipulations.
      * @method SetDESKey
-     * @param {System.Byte[]} encryptionKey The input data to use for the bit manipulations.
-     * @return {System.UInt32[]} `m_desIterations * 2` number of unsigned integers that are the result of the manipulations.
+     * @param {System.Array&lt;System.Byte&gt;} encryptionKey The input data to use for the bit manipulations.
+     * @return {System.Array&lt;System.UInt32&gt;} `m_desIterations * 2` number of unsigned integers that are the result of the manipulations.
      * @static
      * @private
      */
@@ -604,7 +604,7 @@ namespace DigiWar.Security.Cryptography {
      * @param {System.UInt32} scheduleIndex The index of an uint to use from the `schedule` array.
      * @param {System.UInt32} firstSaltTranslator The translated salt for the first salt character.
      * @param {System.UInt32} secondSaltTranslator The translated salt for the second salt character.
-     * @param {System.UInt32[]} schedule The schedule arrray calculated before.
+     * @param {System.Array&lt;System.UInt32&gt;} schedule The schedule arrray calculated before.
      * @return {System.UInt32} The result of these manipulations.
      * @static
      * @private
@@ -635,10 +635,10 @@ namespace DigiWar.Security.Cryptography {
     /**
      * Calculates two unsigned integers that are used to encrypt the password.
      * @method Body
-     * @param {System.UInt32[]} schedule The schedule table calculated earlier.
+     * @param {System.Array&lt;System.UInt32&gt;} schedule The schedule table calculated earlier.
      * @param {System.UInt32} firstSaltTranslator The first translated salt character.
      * @param {System.UInt32} secondSaltTranslator The second translated salt character.
-     * @return {System.UInt32[]} 2 unsigned integers in an array.
+     * @return {System.Array&lt;System.UInt32&gt;} 2 unsigned integers in an array.
      * @static
      * @private
      */
