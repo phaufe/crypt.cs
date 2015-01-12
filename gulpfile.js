@@ -16,7 +16,7 @@ var util=require('util');
 
 /**
  * Provides tasks for [Gulp.js](http://gulpjs.com) build system.
- * @class cli.Gulpfile
+ * @class Crypt.Gulpfile
  * @static
  */
 process.chdir(__dirname);
@@ -40,10 +40,7 @@ gulp.task('default', function(callback) {
  * @method check
  */
 gulp.task('check', function(callback) {
-  child.exec('david', function(err, stdout) {
-    console.log(stdout.trim());
-    callback();
-  });
+  _echo('david', callback);
 });
 
 /**
@@ -68,21 +65,11 @@ gulp.task('clean', function(callback) {
 gulp.task('dist', [ 'dist:setup' ]);
 
 gulp.task('dist:program', function(callback) {
-  var builder='MSBuild/12.0/Bin/MSBuild.exe';
-  var executable=path.join(process.env.ProgramFiles, builder);
-  fs.exists(executable, function(exists) {
-    if(!exists && ('ProgramFiles(x86)' in process.env)) executable=path.join(process.env['ProgramFiles(x86)'], builder);
-    child.exec(util.format('"%s" /nologo /property:Configuration=Release /verbosity:minimal', executable), callback);
-  });
+  _run('MSBuild/12.0/Bin/MSBuild.exe', [ '/nologo', '/property:Configuration=Release', '/verbosity:minimal' ], callback);
 });
 
 gulp.task('dist:setup', [ 'dist:program' ], function(callback) {
-  var builder='Inno Setup/ISCC.exe';
-  var executable=path.join(process.env.ProgramFiles, builder);
-  fs.exists(executable, function(exists) {
-    if(!exists && ('ProgramFiles(x86)' in process.env)) executable=path.join(process.env['ProgramFiles(x86)'], builder);
-    child.exec(util.format('"%s" /qp setup.iss', executable), callback);
-  });
+  _run('Inno Setup/ISCC.exe', [ '/qp', 'setup.iss' ], callback);
 });
 
 /**
@@ -90,10 +77,7 @@ gulp.task('dist:setup', [ 'dist:program' ], function(callback) {
  * @method doc
  */
 gulp.task('doc', [ 'doc:assets' ], function(callback) {
-  child.exec('docgen', function(err, stdout) {
-    console.log(stdout.trim());
-    callback();
-  });
+  _echo('docgen', callback);
 });
 
 gulp.task('doc:assets', function() {
@@ -108,10 +92,7 @@ gulp.task('doc:assets', function() {
 gulp.task('lint', [ 'lint:doc', 'lint:js' ]);
 
 gulp.task('lint:doc', function(callback) {
-  child.exec('docgen --lint', function(err, stdout) {
-    console.log(stdout.trim());
-    callback();
-  });
+  _echo('docgen --lint', callback);
 });
 
 gulp.task('lint:js', function() {
@@ -119,3 +100,35 @@ gulp.task('lint:js', function() {
     .pipe(plugins.jshint(pkg.jshintConfig))
     .pipe(plugins.jshint.reporter('default', { verbose: true }));
 });
+
+/**
+ * Runs a Shell command and prints its output.
+ * @method _echo
+ * @param {String} command The command to run, with space-separated arguments.
+ * @param {Function} callback The function to invoke when the task is over.
+ * @async
+ * @private
+ */
+function _echo(command, callback) {
+  child.exec(command, function(err, stdout) {
+    console.log(stdout.trim());
+    callback();
+  });
+}
+
+/**
+ * Runs a Windows command.
+ * @method _run
+ * @param {String} program The program to run.
+ * @param {Array} args The program arguments.
+ * @param {Function} callback The function to invoke when the task is over.
+ * @async
+ * @private
+ */
+function _run(program, args, callback) {
+  var executable=path.join(process.env.ProgramFiles, program);
+  fs.exists(executable, function(exists) {
+    if(!exists && ('ProgramFiles(x86)' in process.env)) executable=path.join(process.env['ProgramFiles(x86)'], program);
+    child.exec(util.format('"%s" %s', executable, args.join(' ')), callback);
+  });
+}
