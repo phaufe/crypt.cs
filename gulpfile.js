@@ -26,13 +26,7 @@ process.chdir(__dirname);
  * @method default
  */
 gulp.task('default', function(callback) {
-  console.log('Please specify a target. Available targets:');
-
-  for(var task in gulp.tasks) {
-    if(task!='default' && task.indexOf(':')<0) console.log('  '+task);
-  }
-
-  callback();
+  _run('MSBuild/12.0/Bin/MSBuild.exe', [ '/nologo', '/property:Configuration=Release', '/verbosity:minimal' ], callback);
 });
 
 /**
@@ -62,13 +56,7 @@ gulp.task('clean', function(callback) {
  * Creates a distribution file for this program.
  * @method dist
  */
-gulp.task('dist', [ 'dist:setup' ]);
-
-gulp.task('dist:program', function(callback) {
-  _run('MSBuild/12.0/Bin/MSBuild.exe', [ '/nologo', '/property:Configuration=Release', '/verbosity:minimal' ], callback);
-});
-
-gulp.task('dist:setup', [ 'dist:program' ], function(callback) {
+gulp.task('dist', [ 'default' ], function(callback) {
   _run('Inno Setup/ISCC.exe', [ '/qp', 'setup.iss' ], callback);
 });
 
@@ -102,7 +90,7 @@ gulp.task('lint:js', function() {
 });
 
 /**
- * Runs a Shell command and prints its output.
+ * Runs a command and prints its output.
  * @method _echo
  * @param {String} command The command to run, with space-separated arguments.
  * @param {Function} callback The function to invoke when the task is over.
@@ -117,7 +105,7 @@ function _echo(command, callback) {
 }
 
 /**
- * Runs a Windows command.
+ * Runs a Windows program.
  * @method _run
  * @param {String} program The program to run.
  * @param {Array} args The program arguments.
