@@ -121,14 +121,17 @@ function _echo(command, callback) {
  * @method _run
  * @param {String} program The program to run.
  * @param {Array} args The program arguments.
- * @param {Function} callback The function to invoke when the task is over.
+ * @param {Function} callback The function to invoke when the task is over. It is passed one argument `(err)`, where `err` is the error that occurred, if any.
  * @async
  * @private
  */
 function _run(program, args, callback) {
-  var executable=path.join(process.env.ProgramFiles, program);
-  fs.exists(executable, function(exists) {
-    if(!exists && ('ProgramFiles(x86)' in process.env)) executable=path.join(process.env['ProgramFiles(x86)'], program);
-    child.exec(util.format('"%s" %s', executable, args.join(' ')), callback);
-  });
+  if(process.platform!='win32') callback(new Error('Only supported on Windows operating systems.'));
+  else {
+    var executable=path.join(process.env.ProgramFiles, program);
+    fs.exists(executable, function(exists) {
+      if(!exists && ('ProgramFiles(x86)' in process.env)) executable=path.join(process.env['ProgramFiles(x86)'], program);
+      child.exec(util.format('"%s" %s', executable, args.join(' ')), callback);
+    });
+  }
 }
