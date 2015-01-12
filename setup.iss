@@ -3,7 +3,7 @@
 #define AppName "Crypt.cs"
 #define AppPublisher "Cédric Belin"
 #define AppURL "https://github.com/cedx/crypt.cs"
-#define AppVersion "0.4.1"
+#define AppVersion "0.4.2"
 
 [Setup]
 AppCopyright = Copyright (c) 2009-2014 {#AppPublisher}
