@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyProduct("Crypt.cs")]
 [assembly: AssemblyCompany("Cédric Belin")]
-[assembly: AssemblyCopyright("Copyright © 2009-2014, Cédric Belin")]
+[assembly: AssemblyCopyright("Copyright © 2009-2015, Cédric Belin")]
 
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
