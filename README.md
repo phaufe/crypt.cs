@@ -1,5 +1,5 @@
 # Crypt.cs
-[![Version](http://img.shields.io/badge/release-v0.4.2-blue.svg?style=flat)](https://github.com/cedx/crypt.cs/releases) [![License](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/cedx/crypt.cs/blob/master/LICENSE.txt)
+[![Release](http://img.shields.io/github/release/cedx/crypt.cs.svg?style=flat)](https://github.com/cedx/crypt.cs/releases) [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/cedx/crypt.cs/blob/master/LICENSE.txt)
 
 Simple string encoder (Base64, CRC32, DES, MD, SHA...), implemented in [C#](https://www.microsoft.com/net).  
 
