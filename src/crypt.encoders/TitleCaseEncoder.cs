@@ -45,6 +45,7 @@ namespace Crypt.Encoders {
      * @method Encode
      * @param {System.String} text The string to encode.
      * @return {System.String} The encoded string.
+     * @throws {System.ArgumentNullException} The specified string is `null`.
      */
     public string Encode(string text) {
       if(text==null) throw new ArgumentNullException("text");

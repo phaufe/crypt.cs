@@ -700,6 +700,8 @@ namespace DigiWar.Security.Cryptography {
      * @param {System.String} [encryptionSalt] 2 random printable characters that are used to randomize the encryption.
      * @param {System.String} textToEncrypt The text that must be encrypted.
      * @return {System.String} The encrypted text.
+     * @throws {System.ArgumentException} The encryption salt must be 2 characters long.
+     * @throws {System.ArgumentNullException} The encryption salt or the text to encrypt is `null`.
      * @static
      */
     public static string Crypt(string textToEncrypt) {
@@ -722,7 +724,7 @@ namespace DigiWar.Security.Cryptography {
       if(textToEncrypt==null) throw new ArgumentNullException("textToEncrypt");
           
       bool isSaltTooSmall = (encryptionSalt.Length < 2);
-      if(isSaltTooSmall) throw new ArgumentException("The encryptionSalt must be 2 characters big.");
+      if(isSaltTooSmall) throw new ArgumentException("The encryption salt must be 2 characters long.");
 
       char firstSaltCharacter = encryptionSalt[0];
       char secondSaltCharacter = encryptionSalt[1];

@@ -119,7 +119,7 @@ function _winExec(program, args, callback) {
     var executable=path.join(process.env.ProgramFiles, program);
     fs.exists(executable, function(exists) {
       if(!exists && ('ProgramFiles(x86)' in process.env)) executable=path.join(process.env['ProgramFiles(x86)'], program);
-      child.exec(util.format('"%s" %s', executable, args.join(' ')), callback);
+      _exec(util.format('"%s" %s', executable, args.join(' ')), callback);
     });
   }
 }

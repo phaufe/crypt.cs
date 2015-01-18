@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypt.encoders", "src\crypt.encoders\crypt.encoders.csproj", "{D02BFB1B-0D75-4C4B-9DF7-3760FC7A0046}"
 EndProject
@@ -20,13 +20,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "etc", "etc", "{411F00E7-524
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{269A3AF3-ACF8-4CD7-B91F-BEC98664EB75}"
 	ProjectSection(SolutionItems) = preProject
-		bin\make.cmd = bin\make.cmd
-		bin\make.js = bin\make.js
+		gulpfile.js = gulpfile.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{C5A748D9-9973-40D3-BE09-7F6A8AEBF8D6}"
 	ProjectSection(SolutionItems) = preProject
 		AUTHORS.txt = AUTHORS.txt
+		CHANGELOG.md = CHANGELOG.md
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection

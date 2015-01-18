@@ -206,6 +206,7 @@ namespace Crypt.Windows {
      * @method SetStatusTip
      * @param {System.Windows.Control} control The control associated to the specified text.
      * @param {System.String} text The text to display in the status bar.
+     * @throws {System.ArgumentNullException} The specified control is `null`.
      * @private
      */
     private void SetStatusTip(Control control, string text) {
