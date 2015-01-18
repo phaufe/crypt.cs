@@ -19,14 +19,13 @@ var util=require('util');
  * @class Crypt.Gulpfile
  * @static
  */
-process.chdir(__dirname);
 
 /**
  * Runs the default tasks.
  * @method default
  */
 gulp.task('default', function(callback) {
-  _run('MSBuild/12.0/Bin/MSBuild.exe', [ '/nologo', '/property:Configuration=Release', '/verbosity:minimal' ], callback);
+  _winExec('MSBuild/12.0/Bin/MSBuild.exe', [ '/nologo', '/property:Configuration=Release', '/verbosity:minimal' ], callback);
 });
 
 /**
@@ -34,7 +33,7 @@ gulp.task('default', function(callback) {
  * @method check
  */
 gulp.task('check', function(callback) {
-  _echo('david', callback);
+  _exec('david', callback);
 });
 
 /**
@@ -57,7 +56,7 @@ gulp.task('clean', function(callback) {
  * @method dist
  */
 gulp.task('dist', [ 'default' ], function(callback) {
-  _run('Inno Setup/ISCC.exe', [ '/qp', 'setup.iss' ], callback);
+  _winExec('Inno Setup/ISCC.exe', [ '/qp', 'setup.iss' ], callback);
 });
 
 /**
@@ -65,7 +64,7 @@ gulp.task('dist', [ 'default' ], function(callback) {
  * @method doc
  */
 gulp.task('doc', [ 'doc:assets' ], function(callback) {
-  _echo('docgen', callback);
+  _exec('docgen', callback);
 });
 
 gulp.task('doc:assets', function() {
@@ -80,7 +79,7 @@ gulp.task('doc:assets', function() {
 gulp.task('lint', [ 'lint:doc', 'lint:js' ]);
 
 gulp.task('lint:doc', function(callback) {
-  _echo('docgen --lint', callback);
+  _exec('docgen --lint', callback);
 });
 
 gulp.task('lint:js', function() {
@@ -91,29 +90,30 @@ gulp.task('lint:js', function() {
 
 /**
  * Runs a command and prints its output.
- * @method _echo
+ * @method _exec
  * @param {String} command The command to run, with space-separated arguments.
  * @param {Function} callback The function to invoke when the task is over.
  * @async
  * @private
  */
-function _echo(command, callback) {
+function _exec(command, callback) {
   child.exec(command, function(err, stdout) {
-    console.log(stdout.trim());
+    if(err) console.error(err);
+    else console.log(stdout.trim());
     callback();
   });
 }
 
 /**
  * Runs a Windows program.
- * @method _run
+ * @method _winExec
  * @param {String} program The program to run.
  * @param {Array} args The program arguments.
  * @param {Function} callback The function to invoke when the task is over. It is passed one argument `(err)`, where `err` is the error that occurred, if any.
  * @async
  * @private
  */
-function _run(program, args, callback) {
+function _winExec(program, args, callback) {
   if(process.platform!='win32') callback(new Error('Only supported on Windows operating systems.'));
   else {
     var executable=path.join(process.env.ProgramFiles, program);
